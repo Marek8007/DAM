@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listaproductos [
+<!ELEMENT listaproductos (producto)+>
+<!ELEMENT producto (nombre , codigo , tipo? , preciooferta? , precio? , dto?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+<!ATTLIST tipo importado CDATA #REQUIRED>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT dto (#PCDATA)>
+<!ELEMENT preciooferta (#PCDATA)>
+]>
+<listaproductos>
+  <producto>
+    <nombre>agenda escolar</nombre>
+    <codigo>7777777</codigo>
+    <tipo importado="si">USA</tipo>
+    <precio>10</precio>
+    <dto>5</dto>
+  </producto>
+  <producto>
+    <nombre>boligrafo</nombre>
+    <codigo>88888</codigo>
+    <tipo importado="si">francia</tipo>
+    <preciooferta>1</preciooferta>
+  </producto>
+  <producto>
+    <nombre>agenda escolar</nombre>
+    <codigo>7777777</codigo>
+    <precio>10</precio>
+    <dto>10</dto>
+  </producto>
+</listaproductos>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<eventos>
+  <evento>
+    <titulo>Conferencia de Diseño Web</titulo>
+    <descripcion>Una conferencia para diseñadores web</descripcion>
+    <fecha>2024-10-15</fecha>
+    <ubicacion>Ciudad de las Ciencias</ubicacion>
+    <invitados>
+      <invitado>Juan Pérez</invitado>
+      <invitado>Maria González</invitado>
+    </invitados>
+  </evento>
+  <evento>
+    <titulo>Taller de HTML</titulo>
+    <descripcion>Un taller práctico sobre  páginas web</descripcion>
+    <fecha>2024-11-02</fecha>
+    <ubicacion>IES Salvador Gadea</ubicacion>
+  </evento>
+</eventos>

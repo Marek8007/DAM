@@ -1,0 +1,53 @@
+import java.util.Scanner;
+import java.util.regex.*;
+import java.util.ArrayList;
+
+public class Ejercicio1 {
+    public static int calculate(int number) {
+    int cycles = 1;
+    while (number != 1) {
+        cycles++;
+        number = number%2==0?number/2:number*3+1;
+    }
+    return cycles;
+}
+
+  public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      String line;
+      boolean exit = false;
+      String aux = "";
+      ArrayList<Integer> numbers1 = new ArrayList<Integer>();
+      ArrayList<Integer> numbers2 = new ArrayList<Integer>();
+
+      do {
+          line = sc.nextLine();
+            if (line.matches("")) {
+                exit = true;
+            } else {
+                for (int i=0;i<line.length();i++){
+                    if (!line.substring(i, (i+1)).matches(" ")){
+                        aux = aux+line.substring(i, (i+1));
+                    } else {
+                        numbers1.add(Integer.parseInt(aux));
+                        aux = "";
+                    }
+                }
+                numbers2.add(Integer.parseInt(aux));
+                aux = "";
+            }
+      } while (!exit);
+
+      for (int i=0;i<numbers1.size();i++) {
+        int maxCycle = 0;
+        int actualCycle;
+        System.out.print(numbers1.get(i)+" "+numbers2.get(i)+" ");
+
+        for (int j=numbers1.get(i);j<=numbers2.get(i);j++) {
+            actualCycle = calculate(j);
+            maxCycle = actualCycle>maxCycle?actualCycle:maxCycle;
+        }
+        System.out.println(maxCycle);
+      };
+  }
+}

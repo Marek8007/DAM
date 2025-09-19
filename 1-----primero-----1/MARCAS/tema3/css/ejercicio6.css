@@ -1,0 +1,133 @@
+/* css para los detalles del formulario con tabla de los ejercicios de diciembre */
+
+
+body{ /* los valores del cuerpo del documento */
+    width: 90%;
+    background-image: url("../imagenes/fondo_claro_azul.jpg.jpg");
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-color: lightseagreen;
+    border-width: 15px;
+    border-style: outset;
+    padding: 5px;
+}
+
+table{ /* los valores de la tabla existente con el formulario */
+    width: 80%;
+    border: 10px;
+    border-color: brown;
+    background-color: cornsilk;
+    background-position: fixed;
+}
+
+/* las filas con clase centrada, en todas sus celdas de detalle */
+tr.centrado td{
+    text-align: center;
+    background-color:darkgoldenrod;
+
+}
+
+/* las filas con clase nombre, en todas sus celdas de detalle */
+tr.nombre td{
+    background-image: url("../imagenes/cloud-5946381_1280.jpg");
+    height: 10px;
+}
+
+/* esto es para poner un fondo en las filas de cambio de apartado */
+tr.unidascolumnas td{
+    background-image: url("../imagenes/cloud-5946381_1280.jpg");
+    height: 10px;
+}
+
+/* dentro los fieldset tenemos las caption, aquellas que tengan la clase tiítulo le ponemos un fondo */
+caption.titulo{
+    background-image: url("../imagenes/fondo3.jpg");
+    font-size: xx-large;
+    text-align: center;
+    color: green;
+}
+
+/* las etiquetas con clase campos */
+label.campos{
+    font-size: 15px;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+/* utilizamos esta regla para indicar en el colgroup, los hijos col que tienen una clase col1 */
+colgroup>col.col1{
+    width: 40%;
+}
+/* utilizamos esta regla para indicar en el colgroup, los hijos col que tienen una clase col1. La idea es que las columnas tengan tamaño diferente */
+colgroup>col.col2{
+    width: 60%;
+}
+/* esta clase la creamos para aquellos campos input con dicha clase transforman a mayúscula el contenido introducido */
+input.nombre{
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+/* todas las columnas con clase medio centran, especialmente diseñadas para los fieldset con leyenda */
+td.medio{
+    text-align: center;
+}
+
+label.titulos{ /* las etiquetas de te gustan más o menos y la de razona tus respuestas son diferentes al resto */
+    font-weight: bold;
+    font-style: italic;
+    background-color: darkkhaki;
+    font-size: 1em;
+    text-shadow: 1px 2px 30px darkred;
+    color:rgb(37, 17, 148);
+}
+
+
+tr.centrado td{ /* todas las celdas que son descendientes de las filas con clase centrado */
+    text-align: center;
+    background-color:rgb(221, 192, 120);
+    font-size: 1.5em;
+    font-weight: bolder;
+    color:rgb(12, 43, 221)
+}
+
+textarea{
+    background-color: rgb(210, 225, 245);
+}
+legend.superior{ /* leyenda del fieldset principal */
+    background-image: url("../imagenes/web-845807_1920.jpg");
+    background-position: bottom;
+    background-repeat: repeat-y;
+    font-size: xx-large;
+    color: rgb(221, 213, 99);
+    text-align: right;
+}
+h2:hover{ /* efecto cuando pases con el ratón por encima del h2 de ciclos superior daw */
+
+    transform: rotate(5deg);
+}
+h2{ /* reglas para el h2 */
+    text-align: right;
+    color: rgb(136, 8, 119);
+    background: #aadbb6;
+    width: 40%;
+    text-shadow: 5px 10px 6px rgb(32, 43, 207);
+
+}
+
+/* usamos pseudo clases para, cada vez que nos situemos o estemos encima de un campo se produzca un cambio de color */
+input:focus{
+    background-color:lightblue ;
+}
+input:hover{
+    background-color:pink;
+}
+
+.enviar {
+    width: 75px;
+    height: 75px;
+}
+
+.reset {
+    width: 120px;
+    height: 60px;
+}

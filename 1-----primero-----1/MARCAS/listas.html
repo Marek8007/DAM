@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <h1>USO DE LISTAS AVANZADAS</h1>
+        <!--una lista que no empieza en uno, sino en 10-->
+        <h3>lista ordenada - cambio de número de inicio</h3>
+        <ol start="10">
+            <li>1º DAW</li>
+            <li>2º DAW</li>
+            <li>1º SMX</li>
+            <li>2º SMX</li>
+        </ol>
+        <h3>lista ordenada - cambio por letra inicio</h3>
+        <ol type="A" start="5">
+            <li>1º DAW</li>
+            <li id="otro">2º DAW</li>
+            <li>1º SMX</li>
+            <li id="otro">2º SMX</li>
+        </ol>
+        <h3>lista ordenada - EN ORDEN INVERSO - cambio por letra inicio</h3>
+        <ol reversed type="A" start="6">
+            <li>1º DAW</li>
+            <li>2º DAW</li>
+            <li>1º SMX</li>
+            <li>2º SMX</li>
+        </ol>
+
+
+        <h3>lista ordenada - EN ORDEN INVERSO - con números romanos</h3>
+        <ol type="I" start="20" reversed>
+            <li>1º DAW</li>
+            <li>2º DAW</li>
+            <li>1º SMX</li>
+            <li>2º SMX</li>
+        </ol>
+
+        <hr>
+        <h3>lista no ordenada </h3>
+        <ul>
+            <li>1º DAW</li>
+            <li>2º DAW</li>
+            <li>1º SMX</li>
+            <li>2º SMX</li>
+        </ul>
+
+        <h3>lista no ordenada - cuadrado de viñeta</h3>
+        <ul type="square">
+            <li>1º DAW</li>
+            <li>2º DAW</li>
+            <li>1º SMX</li>
+            <li>2º SMX</li>
+        </ul>
+        <h3>lista no ordenada - otra viñeta </h3>
+        <ul type="circle">
+            <li>1º DAW</li>
+            <li id="otro">2º DAW</li>
+            <li>1º SMX</li>
+            <li id="otro">2º SMX</li>
+        </ul>
+
+  <h3>lista no ordenada - uso de estilos inline - modificando la sangría - modificando un elemento de la lista</h3>
+        <ul style="list-style-type: square; padding-left: 21em;">
+            <li >1º DAW</li>
+            <li style="list-style-type: circle;">2º DAW</li>
+            <li>1º SMX</li>
+            <li>2º SMX</li>
+        </ul>
+        <h3>lista no ordenada - uso de css interno </h3>
+        <ul id="diferente">
+            <li>1º DAW</li>
+            <li>2º DAW</li>
+            <li>1º SMX</li>
+            <li>2º SMX</li>
+        </ul>
+        <hr>
+        <!--otros aspectos a conocer de las listas: uso para la etiqueta nav con los enlaces-->
+        <h3>ENLACES DE NUESTRO PROYECTO</h3>
+        <nav>
+            <!--ul es lista no ordenada-->
+            <ul>
+                <li><a href="datos.html">datos</a></li>
+                <li><a href="daw.html">Daw</a></li>
+                <li><a href="enlaces.html">enlaces</a></li>
+                <!-- recordar que el cierre de la etiqueta a va despues de poner el contenido-->
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="https://portal.edu.gva.es/iessalvadorgadea/">Enlace exterior IES GADEA</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <h1>LISTAS ANIDADAS</h2>
+            <section>
+                <header>
+                    <h2>USO DE LISTAS ANIDADAS</h2>
+                    <h3>Ordenadas, No ordenadas y definiciones</h3>
+                </header>
+                <ul>
+                    <li>IES GADEA</li>
+                    <li>DPTO. INFORMATICA</li>
+                    <li>DAW
+                        <ul>
+                
+                            <li style="list-style-type: circle; padding-left: 2em;" > PRIMER CURSO
+                                <ol reversed type="A" start="F">
+                                    <li>LMSGI</li>
+                                    <li>FOL</li>
+                                    <li>PROGRAMACION</li>
+                                    <li>ENTORNOS</li>
+                                    <li>MODULO INGLES</li>
+                                </ol>
+                            </li>
+                            <li>SEGUNDO CURSO</li>
+                        </ul>
+                    </li>
+                    <li>CICLO MEDIO</li>
+                    <dl>PRIMER CURSO 
+                        <dt>MODULOS
+                            <dd>Teoria</dd>
+                            <dd>practica</dd>
+                        </dt>
+                    </dl>
+                    <li>FP. BASICA</li>
+                </ul>
+            </section>
+        <script src="" async defer></script>
+    </body>
+</html>

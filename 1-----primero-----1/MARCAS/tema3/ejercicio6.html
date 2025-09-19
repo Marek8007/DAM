@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 6</title>
+    <link rel="stylesheet" href="css/ejercicio6.css">
+</head>
+<body>
+<fieldset>
+    <legend class="superior">IES SALVADOR GADEA</legend>
+    <h2>CICLO SUPERIOR DE DAW</h2>
+    <form name="formulario" method="post" id="formulario" action="validado.php" autocomplete="on">
+        <table>
+            <caption class="titulo">FICHA DE ALUMNO DE DAW</caption> <!--Cabecera de la tabla-->
+            <tr class="centrado">
+                <td colspan="2">FICHA PERSONAL DEL ALUMNO</td> <!--Primer apartado-->
+            </tr>
+
+            <colgroup>
+                <col class="col1"> <!-- clases para las columnas de la izq y der-->
+                <col class="col2">
+            </colgroup>
+
+            <tr>
+                <td> <!--Campo nombre-->
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" placeholder="Introduce el nombre" min="2" max="50" id="nombre" name="nombre">
+                </td>
+                <td> <!--Campo apellidos-->
+                    <label for="apellido">Apellidos:</label>
+                    <input type="text" placeholder="Introduce los apellidos" min="2" max="50" id="apellido" name="apellido">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <fieldset> <!--Campo fecha nacimiento-->
+                        <legend>Fecha de nacimiento</legend>
+                        <input type="date" id="cumple" name="cumple" min="1900-01-01" max="2025-12-31" required>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset> <!--Campo sexo-->
+                        <label class="campos">SEXO DEL ALUMNO/A:</label>
+                        <input type="radio" id="masculino" name="sexo" value="masculino" required>
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" id="Femenino" name="sexo" value="femenino" required> <!-- Aquí no se que mas atributos ponerle-->
+                        <label for="Femenino">Femenino</label>
+                        <input type="radio" id="otro" name="sexo" value="otro" required>
+                        <label for="otro">Otro</label>
+                    </fieldset>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="medio">
+                    <fieldset> <!--Campo nia-->
+                        <legend class="campos">NIA</legend>
+                        <input type="text" placeholder="Introduce el NIA (8 números)" id="nia" name="nia" pattern="[\d]{8}" value="00000000">
+                    </fieldset>
+                </td>
+                <td class="medio">
+                    <fieldset> <!--Campo dni-->
+                        <legend class="campos">D.N.I.</legend>
+                        <input type="text" placeholder="Introduce el DNI (9 números)" id="dni" name="dni" pattern="[\d]{8}[a-zA-z]" required>
+                    </fieldset>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="medio"> <!--Campo centro origen-->
+                    <label class="campos" for="centroorigen">Centro Curso Anterior/es:</label>
+                    <input type="text" id="centroorigen" name="centroorigen" min="5" max="50" placeholder="Ies">
+                </td>
+                <td class="medio"> <!--Campo vivienda-->
+                    <label class="campos" for="vivienda">Localidad de Residencia:</label>
+                    <input type="text" id="vivienda" name="vivienda" min="5" max="5" placeholder="Tu casa">
+                </td>
+            </tr>
+
+            <tr class="unidascolumnas"> <!--Separador de apartados-->
+                <td colspan="2"></td>
+            </tr>
+
+            <tr class="centrado"> <!--Título segundo apartado-->
+                <td colspan="2">RESULTADOS PRIMERA EVALUACIÓN</td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="medio"> <!--Campo valoración personal-->
+                    <label class="campos" for="personal">Valoración personal:</label>
+                    <input type="range" id="personal" name="personal" value="5" min="1" max="10">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2"> <!--Campo módulos matriculados-->
+                    <label class="campos" for="matriculado">Módulos Matriculados:</label>
+                    <input type="range" id="matriculado" name="matriculado" value="6" min="1" max="11">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="medio"> <!--Campo nivel satisfacción-->
+                    <label class="campos" for="satisfecho">Nivel de satisfacción:</label>
+                    <input type="range" id="satisfecho" name="satisfecho" value="5" min="1" max="10">
+                </td>
+            </tr>
+
+            <tr class="unidascolumnas"> <!--Separador de apartados-->
+                <td colspan="2"></td>
+            </tr>
+
+            <tr class="centrado"> <!--Título tercer apartado-->
+                <td colspan="2">VALORACIÓN DE LAS ASIGNATURAS</td>
+            </tr>
+
+            <tr>
+                <td> <!--Campo checkbox gustan-->
+                    <label class="titulos">TE GUSTAN MÁS:</label>
+                    <hr>
+                    <input type="checkbox" id="sistemasInformaticos" name="gustan">
+                    <label for="sistemasInformaticos">Sistemas Informáticos</label>
+                    <br>
+                    <input type="checkbox" id="basesDatos" name="gustan">
+                    <label for="basesDatos">Base de Datos</label>
+                    <br>
+                    <input type="checkbox" id="programacion" name="gustan">
+                    <label for="programacion">Programación</label>
+                    <br>
+                    <input type="checkbox" id="lmsgi" name="gustan">
+                    <label for="lmsgi">LMSGI</label>
+                    <br>
+                    <input type="checkbox" id="entornos" name="gustan">
+                    <label for="entornos">Entornos de Desarrollo</label>
+                    <br>
+                    <input type="checkbox" id="fol" name="gustan">
+                    <label for="fol">FOL</label>
+                </td>
+                <td> <!--Campo checkbox no gustan-->
+                    <label class="titulos">TE GUSTAN MENOS:</label>
+                    <hr>
+                    <input type="checkbox" id="nsistemasInformaticos" name="nogustan"> <!--El id aquí es igual que en el anterior pero añadiendo una "n" al principio-->
+                    <label for="nsistemasInformaticos">Sistemas Informáticos</label>
+                    <br>
+                    <input type="checkbox" id="nbasesDatos" name="nogustan">
+                    <label for="nbasesDatos">Base de Datos</label>
+                    <br>
+                    <input type="checkbox" id="nprogramacion" name="nogustan">
+                    <label for="nprogramacion">Programación</label>
+                    <br>
+                    <input type="checkbox" id="nlmsgi" name="nogustan">
+                    <label for="nlmsgi">LMSGI</label>
+                    <br>
+                    <input type="checkbox" id="nentornos" name="nogustan">
+                    <label for="nentornos">Entornos de Desarrollo</label>
+                    <br>
+                    <input type="checkbox" id="nfol" name="nogustan">
+                    <label for="nfol">FOL</label>
+                </td>
+            </tr>
+
+            <tr><!--Este hr lo he puesto así porque en la captura no sale como si fueran 2, por lo que es un solo hr que se extiende 2 columnas-->
+                <td colspan="2"><hr></td>
+            </tr>
+
+            <tr>
+                <td> <!--Campo razonar-->
+                    <label class="titulos" for="razona">RAZONA TUS RESPUESTAS</label>
+                </td>
+                <td> <textarea rows="6" cols="60" id="razona" name="razona" placeholder="Razonamiento"></textarea></td>
+            </tr>
+
+            <tr class="unidascolumnas"> <!--Separador de apartados-->
+                <td colspan="2"></td>
+            </tr>
+
+            <tr class="centrado"> <!--Titulo cuarto apartado-->
+                <td colspan="2">Información Documental</td>
+            </tr>
+
+            <tr>
+                <td> <!--Campo cv-->
+                    <label class="titulos" for="fichero">Curriculum Vitae (PDF/DOCX)</label>
+                    <input type="file" accept=".pdf, .docx" id="fichero" name="fichero" required>
+                </td>
+                <td> <!--campo foto-->
+                    <label class="titulos" for="foto">Foto pequeña</label>
+                    <input type="file" accept=".png, .jpg" id="foto" name="foto" required>
+                </td>
+            </tr>
+
+            <tr class="centrado"> <!--Último apartado-->
+                <td colspan="2">VALIDACIÓN Y ENVÍO</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <fieldset> <!--Campo de validación-->
+                        <legend>enviar</legend>
+                        <button type="submit">
+                            <img src="imagenes/enviar.PNG" class="enviar" alt="imagen enviar">
+                        </button>
+                    </fieldset>
+
+                </td>
+                <td>
+                    <fieldset> <!--Campo de reset-->
+                        <legend>reintentar / borrar</legend>
+                        <button type="reset">
+                            <img class="reset" src="imagenes/botonreset.PNG" alt="imagen reset"/>
+                        </button>
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+    </form>
+</fieldset>
+</body>
+</html>

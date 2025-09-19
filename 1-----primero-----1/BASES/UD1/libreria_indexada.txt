@@ -1,0 +1,28 @@
+El arte de fumar                             Garcia Ramon      1881  9789202848351  182  LIBRERIAS PARIS-VALENCIA
+La larga marcha                              Stephen King      1979  9788497930017  352  DEBOLSILLO
+Maleficio                                    Stephen King      1984  9788497931397  368  DEBOLSILLO
+Cementerio de Animales                       Stephen King      1992  9788401498817  416  Plaza $ Janes Editores
+Deja en paz a los muertos                    J. R. Barat       2014  9788469603383  240  Bruño
+Diario de Greg 1: Un pringao total           Jeff Kinney       2008  9788498672220  224  Molino
+Geronimo Stilton en el reino de la fantasia  Geronimo Stilton  2003  9788408060994  384  Destino
+Destroza este diario                         Keri Smith        2013  9788449327858  224  Ediciones Paidós
+Invisible                                    Eloy Moreno       2018  9788416588435  304  Nube de Tinta
+Hombrecito de mazapan                        Percy Graham      2003  9788482140285  28   Oceano De Mexico
+
+
+(dos primeras letras del nombre y tres últimos diginos del ISBN)
+
+Sin ordenar:
+═══════╦═══════╗
+ x000  ║ Ga351 ║
+ x001  ║ St017 ║
+ x002  ║ St397 ║
+ x003  ║ St817 ║
+ x004  ║ JR383 ║
+ x005  ║ Je220 ║
+ x006  ║ Ge994 ║
+ x007  ║ Ke858 ║
+ x008  ║ El435 ║
+ x009  ║ Pe285 ║
+═══════╩═══════╝
+

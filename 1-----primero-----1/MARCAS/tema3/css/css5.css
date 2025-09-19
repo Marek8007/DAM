@@ -1,0 +1,148 @@
+/*He dividido el css como por apartados, cada uno de las cosas que pides en el ejercicio.*/
+
+/*Ajustes generales de la página ---------------------------------*/
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5; /* Esto solo lo pongo para que la página quede un poco más larga y se vea más clara*/
+    background-color: #fff6ee;
+    margin: 0; /* Para que las cosas se apeguen bien a los bordes*/
+}
+/*----------------------------------------------------------------*/
+
+
+/*NAV, lang y las 5 peusdoclases ---------------------------------*/
+nav {
+    text-align: center;
+    background-color: #422b00;
+    padding: 10px;
+    position: sticky; /*para que se quede arriba si bajamos en la página*/
+    top: 0;
+    z-index: 1000; /*<!IMPORTANTE!>Para que se muestre por encima del resto de la página*/
+}
+
+nav a {
+    color: #efb032;
+    text-decoration: none;
+    margin: 15px; /*El espacio entre las opciones*/
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.enIngles:lang(eng) {} /*pseudoelemento :lang*/
+nav a:hover { /*Pseudoelemento :hover*/
+    color: #ffeb3b;
+}
+nav a:visited { /*Pseudoelemento :visited*/
+    color: rgba(220, 123, 20, 0.79);
+}
+nav a:active { /*Pseudoelemento :active*/
+    color: yellow;
+}
+nav a:focus { /*Pesudoelemento :focus*/
+    outline: 2px solid #fcfcbc;
+}
+/*----------------------------------------------------------------*/
+
+/*Los 5 pseudo elementos -----------------------------------------*/
+p::first-line {
+    font-weight: bold;
+}
+p::first-letter {
+    font-size: 1.5em;
+    color: #003366;
+}
+li::after {
+    content: "*";
+}
+li::before {
+    content: "*";
+}
+li::marker {
+    color: #004080;
+    font-weight: bold;
+}
+/*----------------------------------------------------------------*/
+
+/*Las imágenes ---------------------------------------------------*/
+.imagenesTitulo {
+    display: flex;
+    justify-content: space-between;
+}
+.imagenesTitulo > img {
+    width: 20%;
+}
+/*----------------------------------------------------------------*/
+
+h1, h2, h3 { /*Títulos*/
+    text-align: center;
+    color: rgba(16, 7, 1, 0.79);
+}
+
+
+/*Ajustes de la lista no ordenada del principio ------------------*/
+ul {
+    list-style: square inside;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+/*----------------------------------------------------------------*/
+
+p { /* Ajustes de las líneas de texto <p>*/
+    text-align: justify;
+    margin: 15px;
+}
+
+article { /*Ajustes de los articles de la página*/
+    margin: 20px;
+    padding: 15px;
+    border: 3px solid #422b00;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #000000;
+    background-color: #efd6b5;
+    transition: 0.3s; /*Esto es par que cuando quitemos el ratón de encima de un article, no se transforme a instante*/
+}
+
+
+iframe { /*Ajustes de los videos*/
+    display: block;
+    margin: auto; /* Para que se alinee al centro*/
+    border: none;
+    width: 600px;
+    height: 350px;
+}
+
+article:hover { /* Una transformación así bonita para que la página quede mejor */
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+/*Apartado multimedia---------------------------------------------*/
+.multimedia table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.multimedia th {
+    background: #422b00;
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.multimedia td {
+    padding: 10px;
+    border: 1px solid #422b00;
+}
+/*----------------------------------------------------------------*/
+
+footer { /*ajustes del footer*/
+    text-align: center;
+    margin-bottom: 0;
+    padding: 50px;
+    background-color: #412b00;
+    color: #ffffff;
+}

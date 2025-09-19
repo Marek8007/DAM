@@ -1,0 +1,491 @@
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+
+-- -----------------------------------------------------
+-- Schema mydb
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema mydb
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `mydb` ;
+USE `mydb` ;
+
+-- -----------------------------------------------------
+-- Table `mydb`.`Trabajadores`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`Trabajadores` (
+  `idTrabajadores` INT NOT NULL,
+  `Nombre` VARCHAR(45) NOT NULL,
+  `Apellido` VARCHAR(45) NOT NULL,
+  `Edad` INT NOT NULL,
+  PRIMARY KEY (`idTrabajadores`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`Clinicas`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`Clinicas` (
+  `idClinica` INT NOT NULL,
+  `NombreClinica` VARCHAR(45) NOT NULL,
+  `Ubicacion` VARCHAR(80) NULL,
+  `informacion` VARCHAR(1000) NULL,
+  PRIMARY KEY (`idClinica`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`tiempo_completo`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`tiempo_completo` (
+  `idTrabajador` INT NOT NULL,
+  `Sueldo` INT NOT NULL,
+  PRIMARY KEY (`idTrabajador`),
+  CONSTRAINT `fk_tiempo_compreto_1`
+    FOREIGN KEY (`idTrabajador`)
+    REFERENCES `mydb`.`Trabajadores` (`idTrabajadores`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`centros`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`centros` (
+  `idcentro` INT NOT NULL,
+  `nomCentro` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`idcentro`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`Practicas`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`Practicas` (
+  `idTrabajador` INT NOT NULL,
+  `comienzaPracticas` DATE NOT NULL,
+  `terminaPracticas` DATE NOT NULL,
+  `idCentro` INT NOT NULL,
+  PRIMARY KEY (`idTrabajador`),
+  INDEX `fk_Practicas_2_idx` (`idCentro` ASC) VISIBLE,
+  CONSTRAINT `fk_Practicas_2`
+    FOREIGN KEY (`idCentro`)
+    REFERENCES `mydb`.`centros` (`idcentro`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Practicas_1`
+    FOREIGN KEY (`idTrabajador`)
+    REFERENCES `mydb`.`Trabajadores` (`idTrabajadores`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`incidencias`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`incidencias` (
+  `idIncidencia` INT NOT NULL,
+  `idClinica` INT NOT NULL,
+  `nomContacto` VARCHAR(45) NULL,
+  `numContacto` VARCHAR(45) NULL,
+  `descIncidencia` VARCHAR(500) NULL,
+  `codSup` INT NULL,
+  `FEntrada` DATE NOT NULL,
+  `estado` VARCHAR(20) NOT NULL,
+  `FCierre` DATE NULL,
+  PRIMARY KEY (`idIncidencia`, `idClinica`),
+  INDEX `fk_incidencias_2_idx` (`idClinica` ASC) VISIBLE,
+  CONSTRAINT `fk_incidencias_2`-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+
+-- -----------------------------------------------------
+-- Schema mydb
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema mydb
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `mydb` ;
+USE `mydb` ;
+
+-- -----------------------------------------------------
+-- Table `mydb`.`Trabajadores`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`Trabajadores` (
+  `idTrabajadores` INT NOT NULL,
+  `Nombre` VARCHAR(45) NOT NULL,
+  `Apellido` VARCHAR(45) NOT NULL,
+  `Edad` INT NOT NULL,
+  PRIMARY KEY (`idTrabajadores`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`Clinicas`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`Clinicas` (
+  `idClinica` INT NOT NULL,
+  `NombreClinica` VARCHAR(45) NOT NULL,
+  `Ubicacion` VARCHAR(80) NULL,
+  `informacion` VARCHAR(1000) NULL,
+  PRIMARY KEY (`idClinica`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`tiempo_completo`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`tiempo_completo` (
+  `idTrabajador` INT NOT NULL,
+  `Sueldo` INT NOT NULL,
+  PRIMARY KEY (`idTrabajador`),
+  CONSTRAINT `fk_tiempo_compreto_1`
+    FOREIGN KEY (`idTrabajador`)
+    REFERENCES `mydb`.`Trabajadores` (`idTrabajadores`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`centros`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`centros` (
+  `idcentro` INT NOT NULL,
+  `nomCentro` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`idcentro`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`Practicas`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`Practicas` (
+  `idTrabajador` INT NOT NULL,
+  `comienzaPracticas` DATE NOT NULL,
+  `terminaPracticas` DATE NOT NULL,
+  `idCentro` INT NOT NULL,
+  PRIMARY KEY (`idTrabajador`),
+  INDEX `fk_Practicas_2_idx` (`idCentro` ASC) VISIBLE,
+  CONSTRAINT `fk_Practicas_2`
+    FOREIGN KEY (`idCentro`)
+    REFERENCES `mydb`.`centros` (`idcentro`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Practicas_1`
+    FOREIGN KEY (`idTrabajador`)
+    REFERENCES `mydb`.`Trabajadores` (`idTrabajadores`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`incidencias`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`incidencias` (
+  `idIncidencia` INT NOT NULL,
+  `idClinica` INT NOT NULL,
+  `nomContacto` VARCHAR(45) NULL,
+  `numContacto` VARCHAR(45) NULL,
+  `descIncidencia` VARCHAR(500) NULL,
+  `codSup` INT NULL,
+  `FEntrada` DATE NOT NULL,
+  `estado` VARCHAR(20) NOT NULL,
+  `FCierre` DATE NULL,
+  PRIMARY KEY (`idIncidencia`, `idClinica`),
+  INDEX `fk_incidencias_2_idx` (`idClinica` ASC) VISIBLE,
+  CONSTRAINT `fk_incidencias_2`
+    FOREIGN KEY (`idClinica`)
+    REFERENCES `mydb`.`Clinicas` (`idClinica`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`colaboraciones`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`colaboraciones` (
+  `idTrabajador` INT NOT NULL,
+  `idClinica` INT NOT NULL,
+  `idIncidencia` INT NOT NULL,
+  `aportaciones` VARCHAR(500) NULL,
+  PRIMARY KEY (`idTrabajador`, `idClinica`, `idIncidencia`),
+  INDEX `fk_colaboraciones_practicas_idx` (`idTrabajador` ASC) VISIBLE,
+  INDEX `fk_colaboraciones_incidencias_idx` (`idIncidencia`, `idClinica`) VISIBLE,
+  CONSTRAINT `fk_colaboraciones_practicas`
+    FOREIGN KEY (`idTrabajador`)
+    REFERENCES `mydb`.`Practicas` (`idTrabajador`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_colaboraciones_incidencias`
+    FOREIGN KEY (`idIncidencia`, `idClinica`)
+    REFERENCES `mydb`.`incidencias` (`idIncidencia`, `idClinica`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+)
+ENGINE = InnoDB;
+
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`telefonos`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`telefonos` (
+  `idClinica` INT NOT NULL,
+  `telefono` INT(9) NOT NULL,
+  PRIMARY KEY (`idClinica`, `telefono`),
+  CONSTRAINT `fk_telefonos_1`
+    FOREIGN KEY (`idClinica`)
+    REFERENCES `mydb`.`Clinicas` (`idClinica`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`codigos_supremos`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`codigos_supremos` (
+  `idClinica` INT NOT NULL,
+  `codigoSupremo` INT(8) NOT NULL,
+  PRIMARY KEY (`idClinica`, `codigoSupremo`),
+  CONSTRAINT `fk_codigos_supremos_1`
+    FOREIGN KEY (`idClinica`)
+    REFERENCES `mydb`.`Clinicas` (`idClinica`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`correos`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`correos` (
+  `idClinica` INT NOT NULL,
+  `correo` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`idClinica`, `correo`),
+  CONSTRAINT `fk_correos_1`
+    FOREIGN KEY (`idClinica`)
+    REFERENCES `mydb`.`Clinicas` (`idClinica`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`morosos`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`morosos` (
+  `idClinica` INT NOT NULL,
+  `deuda` INT NOT NULL,
+  PRIMARY KEY (`idClinica`),
+  CONSTRAINT `fk_morosos_1`
+    FOREIGN KEY (`idClinica`)
+    REFERENCES `mydb`.`Clinicas` (`idClinica`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`asistencias`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`asistencias` (
+  `idAsistente` INT NOT NULL,
+  `idClinica` INT NOT NULL,
+  `idIncidencia` INT NOT NULL,
+  `descripcionAsistencia` VARCHAR(500) NULL,
+  PRIMARY KEY (`idAsistente`, `idClinica`, `idIncidencia`),
+  INDEX `fk_asiste_2_idx` (`idIncidencia` ASC) VISIBLE,
+  INDEX `fk_asiste_3_idx` (`idClinica` ASC) VISIBLE,
+  CONSTRAINT `fk_asiste_1`
+    FOREIGN KEY (`idAsistente`)
+    REFERENCES `mydb`.`tiempo_completo` (`idTrabajador`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_asiste_2`
+    FOREIGN KEY (`idIncidencia`)
+    REFERENCES `mydb`.`incidencias` (`idIncidencia`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_asiste_3`
+    FOREIGN KEY (`idClinica`)
+    REFERENCES `mydb`.`incidencias` (`idClinica`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`servicios`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`servicios` (
+  `idClinica` INT NOT NULL,
+  `suscripcion` VARCHAR(20) NOT NULL,
+  `firmaDigitalBiometrica` TINYINT NOT NULL,
+  `conexionRadioDigital` TINYINT NOT NULL,
+  `espacioIlimitado` TINYINT NOT NULL,
+  PRIMARY KEY (`idClinica`),
+  CONSTRAINT `fk_servicios_1`
+    FOREIGN KEY (`idClinica`)
+    REFERENCES `mydb`.`Clinicas` (`idClinica`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+    FOREIGN KEY (`idClinica`)
+    REFERENCES `mydb`.`Clinicas` (`idClinica`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`colaboraciones`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`colaboraciones` (
+  `idTrabajador` INT NOT NULL,
+  `idClinica` INT NOT NULL,
+  `idIncidencia` INT NOT NULL,
+  `aportaciones` VARCHAR(500) NULL,
+  PRIMARY KEY (`idTrabajador`, `idClinica`, `idIncidencia`),
+  INDEX `fk_colaboraciones_practicas_idx` (`idTrabajador` ASC) VISIBLE,
+  INDEX `fk_colaboraciones_incidencias_idx` (`idIncidencia`, `idClinica`) VISIBLE,
+  CONSTRAINT `fk_colaboraciones_practicas`
+    FOREIGN KEY (`idTrabajador`)
+    REFERENCES `mydb`.`Practicas` (`idTrabajador`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_colaboraciones_incidencias`
+    FOREIGN KEY (`idIncidencia`, `idClinica`)
+    REFERENCES `mydb`.`incidencias` (`idIncidencia`, `idClinica`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+)
+ENGINE = InnoDB;
+
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`telefonos`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`telefonos` (
+  `idClinica` INT NOT NULL,
+  `telefono` INT(9) NOT NULL,
+  PRIMARY KEY (`idClinica`, `telefono`),
+  CONSTRAINT `fk_telefonos_1`
+    FOREIGN KEY (`idClinica`)
+    REFERENCES `mydb`.`Clinicas` (`idClinica`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`codigos_supremos`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`codigos_supremos` (
+  `idClinica` INT NOT NULL,
+  `codigoSupremo` INT(8) NOT NULL,
+  PRIMARY KEY (`idClinica`, `codigoSupremo`),
+  CONSTRAINT `fk_codigos_supremos_1`
+    FOREIGN KEY (`idClinica`)
+    REFERENCES `mydb`.`Clinicas` (`idClinica`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`correos`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`correos` (
+  `idClinica` INT NOT NULL,
+  `correo` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`idClinica`, `correo`),
+  CONSTRAINT `fk_correos_1`
+    FOREIGN KEY (`idClinica`)
+    REFERENCES `mydb`.`Clinicas` (`idClinica`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`morosos`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`morosos` (
+  `idClinica` INT NOT NULL,
+  `deuda` INT NOT NULL,
+  PRIMARY KEY (`idClinica`),
+  CONSTRAINT `fk_morosos_1`
+    FOREIGN KEY (`idClinica`)
+    REFERENCES `mydb`.`Clinicas` (`idClinica`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`asistencias`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`asistencias` (
+  `idAsistente` INT NOT NULL,
+  `idClinica` INT NOT NULL,
+  `idIncidencia` INT NOT NULL,
+  `descripcionAsistencia` VARCHAR(500) NULL,
+  PRIMARY KEY (`idAsistente`, `idClinica`, `idIncidencia`),
+  INDEX `fk_asiste_incidencias_idx` (`idIncidencia`, `idClinica`) VISIBLE,
+  CONSTRAINT `fk_asiste_1`
+    FOREIGN KEY (`idAsistente`)
+    REFERENCES `mydb`.`tiempo_completo` (`idTrabajador`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_asiste_incidencias`
+    FOREIGN KEY (`idIncidencia`, `idClinica`)
+    REFERENCES `mydb`.`incidencias` (`idIncidencia`, `idClinica`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+)
+ENGINE = InnoDB;
+
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`servicios`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`servicios` (
+  `idClinica` INT NOT NULL,
+  `suscripcion` VARCHAR(20) NOT NULL,
+  `firmaDigitalBiometrica` TINYINT NOT NULL,
+  `conexionRadioDigital` TINYINT NOT NULL,
+  `espacioIlimitado` TINYINT NOT NULL,
+  PRIMARY KEY (`idClinica`),
+  CONSTRAINT `fk_servicios_1`
+    FOREIGN KEY (`idClinica`)
+    REFERENCES `mydb`.`Clinicas` (`idClinica`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+

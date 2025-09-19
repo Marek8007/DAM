@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE alumnos [
+<!ELEMENT alumnos ((eso | bachillerato)+ | (gradomedio | gradosuperior)+)>
+<!ELEMENT eso (#PCDATA)>
+<!ELEMENT bachillerato (#PCDATA)>
+<!ELEMENT gradomedio (#PCDATA)>
+<!ELEMENT gradosuperior (#PCDATA)>
+]>
+<alumnos>
+  <eso>1ESOA</eso>
+  <!-- <gradomedio>1SMX</gradomedio>  Cada alumno solo puede tener un nivel de estudios -->
+</alumnos>

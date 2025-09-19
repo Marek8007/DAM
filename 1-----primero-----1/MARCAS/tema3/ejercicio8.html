@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 7 - PROPIEDADES EN CSS</title>
+    <link rel="stylesheet" href="ejercicio8.css">
+
+</head>
+
+<body>
+    <main>
+        <!-- DOS PÁRRAFOS PARA PROBAR EL USO DE WHITE-SPACE -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit unde culpa doloremque adipisci! Dolores
+            nostrum ex minus, eum velit quas, incidunt ratione fugiat ab tempore ducimus repellendus ea praesentium vel!
+        </p>
+        <p>Esto es un nuevo párrafo en el que vamos a probar los
+            cambios de carro con la propiedad white-space.
+            Y vemos como realiza los cambios de línea</p>
+        <hr>
+        <h1>PARTICULARIDADES DE OUTLINE</h1>
+        <div>
+            <ol>
+                <li>Se dibuja a partir del límite exterior de border.</li>
+                <li>Outline no ocupan espacio: esto es, su aparición u ocultamiento no provoca un redibujado de las
+                    cajas. No suma en el tamaño de la caja. No hay movimiento o desplazamiento de los elementos como con
+                    border.</li>
+                <li>Por la razón anterior Outline se dibuja siempre sobre los elementos. Por lo que puede solapar a
+                    otros elementos o a sí mismo (ver más abajo outline-offset)</li>
+                <li>Outline puede ser no rectangular: Si el elemento se distribuye en varias líneas, el contorno no
+                    forma un rectágulo para encerrar a todo el elemento, sino que ocurre lo que ves en este span.</li>
+                <li>Outline es el mismo en todos los lados. No se pueden definir por laterales como en border-top |
+                    border-right... Así que es imposible (no válido) un outline-left |outline-bottom ...</li>
+                <li>La propiedad 'outline-width' acepta los mismos valores que 'border-width'.</li>
+                <li>La propiedad 'outline-style' acepta los mismos valores que 'border-style', excepto que 'hidden' no
+                    es un estilo de contorno lícito. Css 3 ha añadido el valor 'auto': que deja libertad al agente de
+                    usuario para crearlo. Si no lo tiene definido 'auto' equivale a 'solid'</li>
+                <li>La propiedad 'outline-color' acepta todos los colores y las diversas formas de declararlos. También
+                    la palabra clave 'invert'.</li>
+                <li>La especificación no define cómo dibujar múltiples valores para el mismo estilo:<mark> .elemento {
+                        outline: thick solid } </mark>ni tampoco cómo se deben tratar los solapamientos entre los
+                    estilos múltiples y con otros elementos. </li>
+
+        </div>
+        <article>
+            <h1>Citas de Castelao:</h1>
+            <blockquote>La ciudad cree que fuera de ella no hay más que paisaje, patatas y leche; ignoran que también
+                existe una cultura noble, antiquísima e insobornable.</blockquote>
+            <p><span>El verdadero heroísmo está en transformar los deseos en realidades y las ideas en hechos.</span>
+            </p>
+
+            <a href="https://citas.in/autores/alfonso-daniel-rodriguez-castelao/">Fuente de información</a>
+        </article> <hr>
+        <article>
+            <h1>EXPLICANDO CONTADORES</h1>
+
+        </article>
+        <hr>
+        <div>
+            <h1 class="ultimo">PARTE FINAL</h1>
+        </div>
+    </main>
+
+</body>
+
+</html>

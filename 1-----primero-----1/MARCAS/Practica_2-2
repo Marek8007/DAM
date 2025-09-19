@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listadoDeAlumnos [
+<!ELEMENT listadoDeAlumnos (alumno+)>
+<!ELEMENT alumno (BACH|g_superior|g_medio|ESO)>
+<!ELEMENT ESO (nia, nombre+, grupo, edad?)>
+<!ELEMENT nia (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT grupo (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT BACH (nia, nombre, modalidad, curso+)>
+<!ELEMENT modalidad (#PCDATA)>
+<!ELEMENT curso (#PCDATA)>
+<!ELEMENT g_medio (nia, nombre, familia_profesional?, ciclo)>
+<!ELEMENT familia_profesional (#PCDATA)>
+<!ELEMENT ciclo (#PCDATA)>
+<!ELEMENT g_superior (nia, nombre, familia_profesional?, ciclo)>
+]>
+<listadoDeAlumnos>
+  <alumno>
+    <ESO>
+      <nia>82746152E</nia>
+      <nombre>Raúl</nombre>
+      <grupo>4º</grupo>
+      <edad>16</edad>
+    </ESO>
+  </alumno>
+  <alumno>
+    <BACH>
+      <nia>82938740L</nia>
+      <nombre>Iker</nombre>
+      <modalidad>Científico</modalidad>
+      <curso>2º</curso>
+    </BACH>
+  </alumno>
+  <alumno>
+    <g_medio>
+      <nia>63134023U</nia>
+      <nombre>Lara</nombre>
+      <familia_profesional>Comercio y Marketing</familia_profesional>
+      <ciclo>Actividades Comerciales</ciclo>
+    </g_medio>
+  </alumno>
+  <alumno>
+    <g_superior>
+      <nia>83541987C</nia>
+      <nombre>Arturo</nombre>
+      <familia_profesional>Informática</familia_profesional>
+      <ciclo>DAW</ciclo>
+    </g_superior>
+  </alumno>
+</listadoDeAlumnos>

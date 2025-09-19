@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE equipos [
+<!ELEMENT equipos (equipo+)>
+<!ELEMENT equipo (nombre, ciudad?, entrenador, jugadores?)>
+<!ATTLIST equipo
+          categoría CDATA #REQUIRED
+          estadio CDATA #IMPLIED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT entrenador (#PCDATA)>
+<!ELEMENT jugadores (jugador+)>
+<!ELEMENT jugador (nombre, nacionalidad?, dorsal?, f_nacimiento?, observaciones?)>
+<!ATTLIST jugador
+          posicion CDATA #REQUIRED>
+<!ELEMENT nacionalidad (#PCDATA)>
+<!ELEMENT f_nacimiento (dia, mes, anno)?>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT anno (#PCDATA)>
+<!ELEMENT dorsal (#PCDATA)>
+<!ELEMENT observaciones (#PCDATA)>
+]>
+<equipos>
+    <equipo categoría="primera" estadio="Ciudad de Valencia">
+      <nombre>LEVANTE</nombre>
+      <ciudad>Valencia</ciudad>
+      <entrenador></entrenador>
+      <jugadores>
+        <jugador posicion="portero">
+          <nombre>F. Jermenías</nombre>
+          <nacionalidad>Española</nacionalidad>
+          <f_nacimiento></f_nacimiento>
+        </jugador>
+        <jugador posicion="defensa">
+          <nombre>Alex Munoz</nombre>
+          <nacionalidad>Española</nacionalidad>
+          <dorsal>3</dorsal>
+          <f_nacimiento></f_nacimiento>
+        </jugador>
+        <jugador posicion="defensa">
+          <nombre>Dela</nombre>
+          <nacionalidad>Española</nacionalidad>
+          <f_nacimiento></f_nacimiento>
+        </jugador>
+        <jugador posicion="defensa">
+          <nombre>Ruben Bezo</nombre>
+          <nacionalidad>Portuguesa</nacionalidad>
+          <dorsal>14</dorsal>
+          <f_nacimiento></f_nacimiento>
+        </jugador>
+        <jugador posicion="medio">
+          <nombre>Lozano</nombre>
+          <nacionalidad>Española</nacionalidad>
+          <dorsal>21</dorsal>
+          <f_nacimiento>
+            <dia>24</dia>
+            <mes>mar</mes>
+            <anno>99</anno>
+          </f_nacimiento>
+          <observaciones></observaciones>
+        </jugador>
+        <jugador posicion="delantero">
+          <nombre>Bouldini</nombre>
+          <nacionalidad>Marroquí</nacionalidad>
+          <f_nacimiento></f_nacimiento>
+          <observaciones>Goleador</observaciones>
+        </jugador>
+      </jugadores>
+    </equipo>
+    
+    <equipo categoría="regional" estadio="Encrucijadas">
+      <nombre>ALDAIA</nombre>
+      <entrenador></entrenador>
+    </equipo>
+
+</equipos>

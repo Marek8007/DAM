@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--sólo ya tres posibles secciones: varios, camiseria, pantalones-->
+<!--la moneda puede ser euros o dolar americano-->
+<!--haber uno, ninguno o vacío el campo de proveedor-->
+<catalogo>
+
+    <producto codigo="a1" seccion="camiseria">
+        <nombre>Camisa de manga corta</nombre>​
+        <precio moneda="euros">19.99</precio>​
+        <disponible>true</disponible>​
+        <proveedor>
+            <codprov>14</codprov>
+            <codprov>16</codprov>
+        </proveedor>
+        <ubicacion>piso3</ubicacion>
+        <observaciones>Este producto debe estar siempre disponible</observaciones>
+    </producto>
+
+    <producto codigo="a2" seccion="pantalones">​
+        <nombre>Pantalón vaquero</nombre>​
+        <precio moneda="dolar">29.99</precio>​
+        <disponible>false</disponible>​
+        <proveedor/>
+        <ubicacion>piso 0</ubicacion>
+    </producto>​
+      
+     <producto codigo="a3" seccion="varios">​
+        <nombre>Zapatos de cuero</nombre>​
+        <precio moneda="euros">79.99</precio>​
+        <disponible>true</disponible>​
+        <proveedor>
+            <codprov>24</codprov>
+            <codprov>16</codprov>
+            <codprov>34</codprov>
+            <codprov>36</codprov>
+        </proveedor>
+        <ubicacion>piso1</ubicacion>
+     </producto>​
+
+     <producto codigo="a5" seccion="pantalones">​
+        <nombre>Vaquero Levi's</nombre>​
+        <precio moneda="euros">120.99</precio>​
+        <disponible>true</disponible>​
+        <proveedor/>
+        <ubicacion>piso1</ubicacion>
+     </producto>​
+
+</catalogo>

@@ -1,0 +1,72 @@
+body { /*ajustes para todo el documento */
+    width: 75%;
+    background-image: url("../imagenes/fondo.jpg");
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    font-family: Lucida Sans, Lucida Sans Regular, Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif;
+    color: blue;
+    text-align: justify;
+}
+
+.horario { /*centrar el contenido del horario*/
+    text-align: center;
+}
+
+.ancho { /*Columnas anchas*/
+    width: 20%;
+}
+
+.fino { /*Columnas finas*/
+    width: 10%;
+}
+
+.cabecera { /*Ajustes de la cabecera de la tabla*/
+    background-color: lightblue;
+    font-size: 120%;
+    color: greenyellow;
+    text-align: center;
+}
+
+tr:nth-child(even) { /*Filas pares de la tabla*/
+    background-color: khaki;
+}
+
+tr:nth-child(odd) { /*Filas impares de la tabla*/
+    background-color: lightcoral;
+}
+
+.patio { /*Fila de patio*/
+    height: 30px;
+    background-image: url("../imagenes/fondo_claro_azul.jpg.jpg");
+    font-size: xx-large;
+    text-align: center;
+}
+
+p[class*="informacion"] { /*Párrafos que contienen informacion*/
+    text-indent: 30px;
+    background-color: salmon;
+}
+
+p[class$="informacion"] { /*párrafos que acaban en informacion*/
+    color: black;
+}
+
+p > span { /*span directamente hijos de párrafos*/
+    font-size: 40px;
+    color: green;
+}
+
+b  span { /*span dentro de b*/
+    font-family: fantasy;
+    color: royalblue;
+}
+
+ul { /*quitar viñetas a listas*/
+    list-style: none;
+}
+
+ul li::before { /*viñetas personalizadas*/
+    content: "\261D";
+    color: royalblue;
+}

@@ -1,0 +1,395 @@
+/* */
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto&display=swap');
+
+
+/* Clases y ids generales ------------------ */
+
+#todo, a {
+	font-family: roboto, serif;
+	text-decoration: none;
+}
+
+.fondo {
+	background-image: url('imagenes_comunes/patron.png');
+	background-size: 1000px;
+	background-attachment: fixed;
+}
+
+#barra {
+	background-color: #ff9900;
+	position: fixed;
+	height: 100%;
+	width: 200px;
+	text-align: center;
+	border-radius: 15px;
+	font-size: 1.5em;
+	font-family: fantasy;
+	letter-spacing: 2px;
+	box-shadow: 3px 8px 8px 2px rgb(12,34,56);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 7px;
+}
+
+.logo {
+	padding-top: 10px;
+	width: 185px;
+	transition: all 0.4s;
+}
+
+.logo:hover {
+	padding-top: 10px;
+	width: 190px;
+	transition: all 0.4s;
+}
+
+.menus {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.menus h3{
+	color: black;
+}
+
+.menu {
+	background-color: #e68a00;
+	width: 200px;
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.4s;
+}
+
+.menu:hover  {
+	background-color: #cc7a00;
+	width: 280px;
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: all 0.4s;
+	transform: translateX(40px);
+	font-size: 1.6em;
+}
+
+.menuselect {
+	background-color: #b36b00;
+	width: 200px;
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.4s;
+}
+
+.contacto a {
+	text-decoration: none;
+	color: #383735;
+}
+
+.contacto a:hover {
+	text-decoration: none;
+	color: #b35900;
+	cursor: pointer;
+}
+
+/*#contenido {*/
+
+/*	width: 1200px;*/
+/*	position: absolute;*/
+/*	left: 300px;*/
+/*	display: flex;*/
+/*	flex-direction: column;*/
+/*	align-items: center;*/
+
+/*}*/
+
+#contenidoHome {
+
+	width: 1500px;
+	margin-left: 300px;
+	display: grid;
+	grid-template-areas:
+			'. cr cr cr .'
+			'in in in in in';
+
+
+}
+
+.creado {
+	background-color: #4A443F;
+	text-align: center;
+	color: #FFEBDC;
+	padding: 3px;
+	border-radius: 5px;
+	grid-area: cr;
+}
+
+/* /Clases y ids generales */
+
+/* Clases del home ------------------------- */
+
+.intro {
+	background-color: #eda85e;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+	grid-area: in;
+}
+
+.intro h2 {
+	text-align: center;
+}
+
+.intro h1 {
+	text-align: center;
+	font-size: 3em;
+	font-family: Agbalumo;
+}
+
+.maquinas {
+	position: absolute;
+	top: 350px;
+	width: 1100px;
+	border-radius: 15px;
+	grid-area: ma;
+
+}
+
+.quehacemos {
+	position: absolute;
+	top: 950px;
+	background-color: #eda85e;
+	border-style: solid;
+	border-radius: 10px;
+	border-color: #4A443F;
+	padding-left: 10px;
+	grid-area: qu;
+
+}
+
+.necesidad {
+	position: absolute;
+	top: 1200px;
+	left: 400px;
+	background-color: #eda85e;
+	padding: 10px;
+	border-style: solid;
+	border-radius: 10px;
+	border-color: #4A443F;
+	text-align: center;
+	grid-area: ne;
+
+}
+
+.imagen1 {
+	position: absolute;
+	top: 1200px;
+	left: 40px;
+	grid-area: im;
+
+}
+
+.imagen1 img {
+	border-radius: 15px;
+	width: 300px;
+}
+
+/* /clases del home -----------------------------*/
+
+.imagenes_maquinas {
+	display: flex;
+	gap: 20px;
+}
+
+.imagenes_maquinas2 {
+	display: flex;
+	gap:180px;
+}
+
+.imagenes_maquinas img, .imagenes_maquinas2 img {
+	width: 350px;
+	border-radius: 15px;
+}
+
+.explicación_máquinas {
+	background-color: #eda85e;
+	padding: 15px;
+	border-radius: 10px;
+	border-style: solid;
+	border-color: #383735;
+}
+
+.precio1 {
+	position: absolute;
+	top: 430px;
+	left: 110px;
+	background-color: #eda85e;
+	padding: 10px;
+	border-radius: 10px;
+	border-style: solid;
+	border-color: #383735;
+}
+
+.precio2 {
+	position: absolute;
+	top: 430px;
+	left: 640px;
+	background-color: #eda85e;
+	padding: 10px;
+	border-radius: 10px;
+	border-style: solid;
+	border-color: #383735;
+}
+
+.bf {
+	position: absolute;
+	top: 500px;
+	left: 380px;
+	display: flex;
+	gap: 295px;
+}
+
+.bf img {
+	width: 250px;
+}
+
+.pedido {
+	position: absolute;
+	top: 800px;
+	left: 210px;
+	background-color: #eda85e;
+	border-radius: 10px;
+	border-style: solid;
+	border-color: #383735;
+}
+
+.clientes {
+	position: absolute;
+	top: 110px;
+	background-color: #eda85e;
+	border-radius: 10px;
+	padding: 10px;
+	border-style: solid;
+	border-color: #383735;
+}
+
+.grafico {
+	position: absolute;
+	top: 350px;
+	width: 900px;
+	border-radius: 15px;
+	border-style: solid;
+	border-color: #383735;
+}
+
+.rsc1 {
+	background-color: #eda85e;
+}
+
+.rsc_imagen1 {
+
+}
+
+.rsc2 {
+
+}
+
+.rsc_imagen2 {
+	
+}
+/* - - - Footers - - - */
+/* Són necesarios tantos footers para poder poner en cada página el footer a la altura correcta  */
+
+.footer {	
+	position: absolute;
+	left: 300px;
+	top: 1580px;	
+	width: 1200px;
+	height: 180px;
+	background-color: #383735;
+	border-radius: 15px 15px 0 0;
+	color: #fffae6;
+	text-align: center;
+}
+
+.footer a {
+	color: #fffae6;
+}
+
+.footer_maq {	
+	position: absolute;
+	left: 300px;
+	top: 850px;	
+	width: 1200px;
+	height: 180px;
+	background-color: #383735;
+	border-radius: 15px 15px 0 0;
+	color: #fffae6;
+	text-align: center;
+}
+
+.footer_maq a {
+	color: #fffae6;
+}
+
+.footer_cli {	
+	position: absolute;
+	left: 300px;
+	top: 950px;	
+	width: 1200px;
+	height: 180px;
+	background-color: #383735;
+	border-radius: 15px 15px 0 0;
+	color: #fffae6;
+	text-align: center;
+}
+
+.footer_cli a {
+	color: #fffae6;
+}
+
+.footer_pre {	
+	position: absolute;
+	left: 300px;
+	top: 950px;	
+	width: 1200px;
+	height: 180px;
+	background-color: #383735;
+	border-radius: 15px 15px 0 0;
+	color: #fffae6;
+	text-align: center;
+}
+
+.footer_pre a {
+	color: #fffae6;
+}
+
+.footer_rsc {	
+	position: absolute;
+	left: 300px;
+	top: 850px;	
+	width: 1200px;
+	height: 180px;
+	background-color: #383735;
+	border-radius: 15px 15px 0 0;
+	color: #fffae6;
+	text-align: center;
+}
+
+.footer_rsc a {
+	color: #fffae6;
+}

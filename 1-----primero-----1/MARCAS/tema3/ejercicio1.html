@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="copyright" content="@iesgadea_daw">
+
+    <link rel="stylesheet" href="css/css1.css">
+    <title>Ejercicios CSS - pseudo clases</title>
+
+	<style>
+        body {
+            width: 70%;
+            border-width: 30px 20px 30px 20px;
+            padding: 30px 20px 30px 20px;
+            background-color: bisque;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 16px;
+            color: green;
+        }
+
+        p:nth-child(odd) {
+            font-family: Arial Helvetica sans-serif;
+            color: darkblue;
+            font-size: 60%;
+            text-align: right;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background-image: url("imagenes/fondo3.jpg");
+        }
+
+        ::marker {
+            color: red;
+        }
+
+        ul::before {
+            content: "********************";
+            letter-spacing: 20px;
+            color: salmon;
+        }
+
+        ul::after {
+            content: "********************";
+            height: 20px;
+            letter-spacing: 20px;
+            color: blueviolet;
+        }
+
+        li:nth-child(3) {
+            color: red;
+            font-size: xx-large;
+        }
+
+        h1, h2, h3 {
+            border: groove 8px red;
+        }
+
+        p:nth-child(even) {
+            background-image: url("imagenes/fondo2.jpg");
+            text-align: center;
+            font-size: 80%;
+            font-weight: bold;
+            color: blue;
+        }
+
+        p:last-of-type::first-letter{
+            font-size: 50px;
+        }
+    </style>        
+        
+</head>
+
+<!--
+     Hay una serie de cosas que difieren de la imagen que proporcionas y las instrucciones.
+     He decidido ceñirme a las instrucciones, por lo que mi resultado es diferente en algunos aspectos a la imagen.
+
+     Específicamente, hablo de algunas cosas como que los títulos no tengan imagen de fondo, el texto de programación no esté en cursiva,
+     la separación entre los asteriscos sea diferente respecto los de arriba con los de abajo, que los textos impares estén alineados a la derecha
+     mientras que los pares al centro (así lo especifican las instrucciones, aunque en la imagen están al revés) o que la imagen de los párrafos impares
+     no sea la misma que la de la foto (uso la que indican las instrucciones, la imagen fondo3.jpg, aunque en la foto sale de fondo la imagen fondo1.jpg)
+-->
+
+
+<body>
+<h1>IES SALVADOR GADEA</h1>
+<h2>CICLO FORMATIVO GRADO SUPERIOR DAW</h2>
+<h3>MÓDULO DE LENGUAJE DE MARCAS Y SISTEMAS DE GESTIÓN DE INFORMACIÓN</h3>
+
+<ul>
+    <li>Sistemas informáticos.</li>
+    <li>Bases de datos.</li>
+    <li>Programación.</li>
+    <li><mark>Lenguajes de marcas</mark> y sistemas de gestión de información.</li>
+    <li>Entornos de desarrollo.</li>
+    <li><mark>Desarrollo web</mark> en entorno cliente.</li>
+    <li><mark>Desarrollo</mark> web en entorno servidor.</li>
+    <li>Despliegue de aplicaciones web.</li>
+    <li>Diseño de interfaces Web.</li>
+    <li>Proyecto de desarrollo de aplicaciones web</li>
+    <li>Empresa e iniciativa emprendedora.</li>
+    <li>Formación y orientación laboral</li>
+</ul>
+
+<p>La duración total del currículo de este ciclo formativo, incluida
+    tanto la carga lectiva de sus módulos profesionales como la carga lectiva
+    reservada para la docencia en inglés, es de 2.000 horas</p>
+<p>El módulo profesional de Proyecto de Desarrollo de Aplicaciones
+    Web consistirá en la realización individual de un proyecto de carácter
+    integrador y complementario del resto de los módulos que componen el
+    ciclo formativo, que se presentara y defenderá, ante un tribunal formado
+    por profesorado del equipo docente del ciclo formativo. Se desarrollará
+    con carácter general, durante el último trimestre del segundo curso,
+    pudiendo coincidir con la realización del módulo profesional de Formación en Centros de Trabajo.
+    El desarrollo y seguimiento de este módulo
+    deberá compaginar la tutoría individual y colectiva y su evaluación, por
+    ser de carácter integrador y complementario del resto de los módulos
+    que componen el ciclo formativo, quedará condicionada a la evaluación
+    positiva de estos</p>
+<p>Los centros educativos dispondrán, de acuerdo con la legislación
+    aplicable en cada caso, de la necesaria autonomía pedagógica, de organización y de gestión económica para el desarrollo de las enseñanzas y
+    su adaptación a las características concretas del entorno socioeconómico, cultural y profesional</p>
+<p>En el marco general del proyecto educativo y en función de las
+    características de su entorno productivo, los centros autorizados para
+    impartir el ciclo formativo concretarán y desarrollarán el currículo
+    mediante la elaboración del proyecto curricular del ciclo formativo y de
+    las programaciones didácticas de cada uno de sus módulos profesionales, en los términos establecidos en esta orden, potenciando o creando
+    la cultura de prevención de riesgos laborales en los espacios donde se
+    impartan los diferentes módulos profesionales, así como una cultura de
+    respeto ambiental, trabajo de calidad realizado conforme a las normas
+    de calidad, creatividad, innovación e igualdad de géneros</p>
+</body>
+</html>

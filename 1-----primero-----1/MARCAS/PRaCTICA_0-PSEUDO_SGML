@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DAM>
+  <modulo>
+    <titulo>Lenguaje de marcas y sistemas de gestion de la informacion</titulo>
+  </modulo>
+  <LMSGI>
+    <unidad>
+      <contenido>Introducción</contenido>
+    </unidad>
+    <unidad>
+      <contenido>HTML</contenido>
+    </unidad>
+    <unidad>
+      <contenido>CSS</contenido>
+    </unidad>
+    <unidad>
+      <contenido>XML</contenido>
+    </unidad>
+    <unidad>
+      <contenido>SINDICACION</contenido>
+    </unidad>
+    <unidad>
+      <contenido>SISTEMAS DE GESTION</contenido>
+    </unidad>
+  </LMSGI>
+  <modulo>
+    <titulo>Sistemas Informaticos</titulo>
+  </modulo>
+  <SI>
+    <unidad/>
+  </SI>
+</DAM>
