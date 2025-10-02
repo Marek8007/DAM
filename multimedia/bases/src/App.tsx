@@ -14,7 +14,7 @@ function App() {
   return (
     <>
     <AuthProvider>
-      <div className="flex flex-col justify-center items-center g-svh">
+      <div className="flex flex-col justify-center items-center h-svh">
       {/* <h3 className='flex justify-center items-center h-svh'>hola buenas tardes</h3> */}
 
       {/* <BasicTypes/> */}
@@ -22,9 +22,9 @@ function App() {
       {/* <BasicFunctions/> */}
       {/* <Counter/> */}
       <LoginPage/>
+      <UsersPage/>
       </div>
 
-      <UsersPage/>
 
 
     </AuthProvider>

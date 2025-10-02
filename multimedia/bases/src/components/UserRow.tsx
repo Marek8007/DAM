@@ -1,9 +1,17 @@
-export const UserRow = () => {
+import type { User } from "../interfaces/reqres.response"
+
+interface Props {
+  user: User
+}
+
+
+export const UserRow = ({user}:Props) => {
+  
   return (
     <tr>
-        <td><img src="" className="rounded-full w-14" alt="User Avatar"/></td>
-        <td>{"Marcos"} {"Miquel"}</td>
-        <td>{"marcosmiquel77@gmail.com"}</td>
+        <td>{user.year}</td>
+        <td>{user.name} {user.color}</td>
+        <td>{user.pantone_value}</td>
     </tr>
   )
 }
