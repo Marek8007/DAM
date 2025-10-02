@@ -1,0 +1,128 @@
+body{
+background-image: url(../comunes/fondo.jpg);
+background-attachment: fixed;
+display: flex;
+}
+.desplegable{
+position: fixed;
+left: 0;
+top: 0;
+width: 4%;
+height: 100vh;
+background: linear-gradient(135deg, #005805 0%, #000000 100%);
+transition: width 0.3s ease;
+z-index: 1000;
+}
+.desplegable:hover {
+width: 12%;
+}
+.desplgable-header {
+padding: 20px;
+text-align: center;
+border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.desplegable-header h2 {
+color: white;
+font-size: 18px;
+white-space: nowrap;
+opacity: 0;
+transition: opacity 0.2s ease;
+text-align: center;
+}
+.desplegable:hover .desplegable-header h2 {
+opacity: 1;
+}
+.lateral li{
+text-align: center;
+height: 30px;
+display: none;
+width: 12%;
+background-color: aliceblue ease;
+transition: 0.3s;
+}
+.desplegable:hover .lateral li {
+display: block;
+}
+.menu-list {
+list-style: none;
+padding: 20px 0;
+}
+.menu-item {
+margin: 5px 0;
+}
+.menu-link {
+display: flex;
+align-items: center;
+padding: 15px 20px;
+color: white;
+text-decoration: none;
+transition: background-color 0.3s ease;
+position: relative;
+}
+.menu-link:hover {
+background-color: rgba(255,255,255,0.1);
+}
+.menu-text{
+opacity: 0;
+transition: opacity 0.2s ease;
+text-align: center;
+margin-left: 5px;
+}
+.desplegable:hover .menu-text{
+opacity: 1;
+}
+.menu-icon {
+width: 24px;
+height: 24px;
+margin-right: 15px;
+flex-shrink: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 18px;
+}
+.blockes{
+display: block;
+margin-left: 4%; 
+width: calc(96% - 40px); 
+transition: all 0.3s ease; 
+}
+.bloqueInformacion {
+display: flex;
+align-items: flex-start;
+border: 4px double white;
+padding: 20px;
+gap: 20px;
+margin-bottom: 1%;
+background-color: transparent;
+transition: 0.3s;
+border-radius: 5px;
+}
+
+.desplegable:hover ~ .blockes {
+margin-left: 12%; /* Aumenta el margen para dejar espacio al menú expandido */
+width: calc(88% - 40px); /* Reduce el ancho proporcionalmente */
+}
+.texto{
+background-color: #f0f0f0;
+opacity: 0.8;
+padding: 15px;
+border-radius: 8px;
+flex: 1;
+}
+.img {
+width: 300px;
+height: auto;
+border-radius: 8px;
+transition: 0.3s;
+}
+
+.img:hover{
+    width: 1000px;
+}
+.bloqueInformacion:first-child {
+
+    justify-content: center;
+    text-align: center;
+    border:none;
+}
