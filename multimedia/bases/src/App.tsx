@@ -9,6 +9,7 @@ import { Counter } from './components/Counter'
 import { AuthProvider } from './context/AuthContext'
 import { LoginPage } from './components/LoginPage'
 import { UsersPage } from './components/UsersPage'
+import {FormsPage} from "./components/FormsPage.tsx";
 
 function App() {
   return (
@@ -21,8 +22,9 @@ function App() {
       {/* <ObjectLiterals/> */}
       {/* <BasicFunctions/> */}
       {/* <Counter/> */}
-      <LoginPage/>
-      <UsersPage/>
+      {/*<LoginPage/>*/}
+      {/*<UsersPage/>*/}
+        <FormsPage/>
       </div>
 
 

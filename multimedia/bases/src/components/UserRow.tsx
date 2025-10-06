@@ -9,9 +9,9 @@ export const UserRow = ({user}:Props) => {
   
   return (
     <tr>
-        <td>{user.year}</td>
-        <td>{user.name} {user.color}</td>
-        <td>{user.pantone_value}</td>
+        <td><img className="rounded-full w-20 p-2" src={user.avatar} alt="Avatar"/></td>
+        <td>{user.first_name} {user.last_name}</td>
+        <td>{user.email}</td>
     </tr>
   )
 }

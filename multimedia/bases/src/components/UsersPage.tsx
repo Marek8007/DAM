@@ -3,7 +3,7 @@ import { UserRow } from "./UserRow"
 
 export const UsersPage = () => {
 
-    const {users, nextPage} = useUsers();
+    const {users, nextPage, previousPage} = useUsers();
 
     // console.log(users)
   return (
@@ -30,9 +30,10 @@ export const UsersPage = () => {
 
         <div className="flex justify-between w-[500px] mt-2 ">
             <button
+            onClick={previousPage}
             className="p-2 bg-blue-500 text-white rounded-xl">Anteriores</button>
             <button
-            onClick={() => nextPage()}
+            onClick={nextPage}
             className="p-2 bg-blue-500 text-white rounded-xl">Siguientes</button>
         </div>
     </>
