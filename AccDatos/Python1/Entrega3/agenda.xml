@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<agenda>
+  <contacto>
+    <Nombre>1</Nombre>
+    <Apellidos>1</Apellidos>
+    <Email>1</Email>
+    <Telefono1>1</Telefono1>
+    <Telefono2>1</Telefono2>
+    <Direccion>11</Direccion>
+  </contacto>
+</agenda>
