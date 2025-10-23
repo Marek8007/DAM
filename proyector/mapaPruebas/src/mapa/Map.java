@@ -1,14 +1,11 @@
 package mapa;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class Map {
 
-    private HashMap<Integer, Room> rooms = new HashMap<>();
     private ArrayList<ArrayList<MapTile>> map = new ArrayList<>();
-    private int totalRooms = 0;
-    final private int maxRooms = (int) (Math.random()*4)+5;
+    private int maxRooms;
 
 
     public Map() { //creates a 5x5 array of MapTiles
@@ -21,18 +18,45 @@ public class Map {
         }
     }
 
-    private Room generateRoom() { //generates a room and adds it to the HashMap
-        Room room = new Room(totalRooms);
-        this.rooms.put(totalRooms, room);
-        totalRooms++;
-        return room;
+    private Room generateRoom(int totalRooms) { //generates a room and adds it to the HashMap
+        return new Room(totalRooms);
     }
 
-    public void generateLayout() {
-        for (int i=0;i<maxRooms;i++){
+    private void layoutStart(int totalRooms) { //chooses a random number between 4 and sets the room 0 at a specific location
+        maxRooms = (int) (Math.random()*4)+5;
 
-            map.get((int) (Math.random()*5)).set((int) (Math.random()*5) ,generateRoom());
+        int startPosition = (int) (Math.random()*4);
+        switch (startPosition) {
+            case 0:
+                map.get(0).set(2, generateRoom(totalRooms));
+                break;
+            case 1:
+                map.get(2).set(4, generateRoom(totalRooms));
+                break;
+            case 2:
+                map.get(4).set(2, generateRoom(totalRooms));
+                break;
+            case 3:
+                map.get(2).set(0, generateRoom(totalRooms));
         }
+    }
+
+
+    public void generateLayout() {
+        int totalRooms = 0;
+        layoutStart(totalRooms);
+        totalRooms++;
+
+
+
+
+        //random rooms
+//        int totalRooms = 0;
+//        maxRooms = (int) (Math.random()*4)+5;
+//        for (int i=0;i<maxRooms;i++){
+//            map.get((int) (Math.random()*5)).set((int) (Math.random()*5) ,generateRoom(totalRooms));
+//            totalRooms++;
+//        }
     }
 
 
