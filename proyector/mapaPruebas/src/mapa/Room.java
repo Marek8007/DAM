@@ -12,19 +12,17 @@ public class Room extends MapTile{
 
     ArrayList<Room> connections;
 
-    final private int generatedOrder;
 
     public Room(int generatedOrder) {
-        super("#");
+        super("#", generatedOrder);
         width = (int) (Math.random()*6)+3;
         height = (int) (Math.random()*6)+3;
-        this.generatedOrder = generatedOrder;
     }
 
 
     @Override
     public String toString() {
-        return generatedOrder+"#";
+        return this.getGeneratedOrder()+"#";
     }
 
     public int getWidth() {

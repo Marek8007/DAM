@@ -41,11 +41,54 @@ public class Map {
         }
     }
 
+    private int[] getRoomCoords(int generatedOrder) { //given a generated order, searches in the map a room with than generated order en return an int[] with its coordinates
+        int[] coords = new int[]{0, 0};
+
+        for (int i=0;i<5;i++) {
+            for (int j=0;j<5;j++) {
+                if (map.get(i).get(j) instanceof Room) {
+                    coords[0] = i;
+                    coords[1] = j;
+                }
+            }
+        }
+
+        return coords;
+    }
 
     public void generateLayout() {
         int totalRooms = 0;
         layoutStart(totalRooms);
         totalRooms++;
+
+        int roomTried = 0;
+        int[] roomTriedCoords = getRoomCoords(roomTried);
+
+        boolean generationEnded = false;
+        int generateRoomChances = 100;
+        do {
+            int random = (int) (Math.random()*4);
+
+            switch (random) { //0^ - 1> - 2< - 3v
+                case 0:
+                    if (roomTriedCoords[0] != 0) {
+
+                    }
+                    break;
+                case 1:
+                    map.get(2).set(4, generateRoom(totalRooms));
+                    break;
+                case 2:
+                    map.get(4).set(2, generateRoom(totalRooms));
+                    break;
+                case 3:
+                    map.get(2).set(0, generateRoom(totalRooms));
+            }
+
+
+
+
+        } while (!generationEnded);
 
 
 
