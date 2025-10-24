@@ -6,7 +6,7 @@ public class MapTile {
     final private int generatedOrder;
 
     public MapTile() {
-        tileSymbol = "··";
+        tileSymbol = "   ";
         this.generatedOrder = -1;
     }
 
@@ -22,5 +22,9 @@ public class MapTile {
 
     public int getGeneratedOrder() {
         return generatedOrder;
+    }
+
+    public String getTileSymbol() {
+        return tileSymbol;
     }
 }
