@@ -1,15 +1,20 @@
 import {Pressable, StyleSheet, Text} from 'react-native'
 import React from 'react'
+import {MaterialCommunityIcons} from "@expo/vector-icons";
 
 interface Props{
     label: string;
     position?: 'left' | 'right';
+    iconName?: React.ComponentProps<typeof MaterialCommunityIcons>['name'];
 
     onPress?: () =>  void;
     onLongPress?: () => void;
+    iconSize?: number;
+    iconColor?: string;
 }
 
-export default function FAB({label,position="right", onPress, onLongPress}:Props) {
+export default function FAB({label,position="right", onPress, onLongPress, iconSize=24, iconColor='white', iconName}:Props) {
+
     return (
         <Pressable
             style={({ pressed}) => [
@@ -22,9 +27,11 @@ export default function FAB({label,position="right", onPress, onLongPress}:Props
             onPress={onPress}
             onLongPress={onLongPress}>
 
-            <Text style={{color: 'white'}}>
-                {label}
-            </Text>
+            {iconName?
+                <MaterialCommunityIcons name={iconName} size={iconSize} color={iconColor}/>:
+                <Text style={{color: 'white'}}>
+                    {label}
+                </Text>}
         </Pressable>
     )
 }

@@ -16,14 +16,16 @@ export default function App() {
             <FAB label="+1"
             onPress={() => setCount(count + 1)}
             onLongPress={() => setCount(0)}
-            position='right'>
-            </FAB>
+            position='right'/>
 
             <FAB label="-1"
             onPress={() => setCount(count - 1)}
             onLongPress={() => setCount(0)}
-            position='left'>
-            </FAB>
+            position='left'
+            iconName='nintendo-switch'
+            iconSize={24}
+            iconColor='white'/>
+
 
             <StatusBar style="auto" />
         </View>
