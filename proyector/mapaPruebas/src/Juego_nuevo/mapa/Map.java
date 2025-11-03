@@ -95,7 +95,7 @@ public class Map {
 
         int maxRooms = 10;
         int minRooms = 7;
-        finalRoomN = (rng.nextInt()%(maxRooms+1-minRooms))+ minRooms;
+        finalRoomN = (rng.nextInt(maxRooms+1-minRooms))+ minRooms;
 
         layoutStart();
 
@@ -103,7 +103,7 @@ public class Map {
         int[] lastGeneratedCoords = getRoomCoords(lastRoomGenerated);
 
         boolean generationEnded = false;
-        int roomGenerated = 0;
+        boolean roomGenerated = false;
         int tries;
 
 
@@ -132,24 +132,26 @@ public class Map {
                         !(map[newRow][newCol] instanceof Room)) {
 
                     map[newRow][newCol] = new Room();
-                    roomGenerated = 1;
+                    roomGenerated = true;
                 }
 
-                if (tries>100) {
-                    roomGenerated=-1;
+                if (tries>100) { // si no se puede mover tira para atrás
+                    lastRoomGenerated--;
+                    lastGeneratedCoords = getRoomCoords(lastRoomGenerated);
+                    tries=0;
                 }
 
-            } while (roomGenerated==0);
+            } while (!roomGenerated);
 
-            if (Room.getTotalRooms() == finalRoomN || roomGenerated==-1) {
+            if (Room.getTotalRooms() == finalRoomN) {
                 generationEnded = true;
             }
 
-            if (roomGenerated==-1) {
-                System.out.println("Generation ended prematurely");
-            }
+//            if (roomGenerated==-1) {
+//                System.out.println("Generation ended prematurely");
+//            }
 
-            roomGenerated = 0; // set to false again to repeat loop
+            roomGenerated = false; // set to false again to repeat loop
 //            System.out.println("room generated");
 
             lastRoomGenerated++;
