@@ -6,7 +6,11 @@ export const MoodCard = () => {
 
     return (
         <View style={styles.container}>
+            <View>
                 <Text style={styles.emoji}>😃</Text>
+                <Text style={{marginHorizontal: 60}}>■ · · · ·</Text>
+            </View>
+
 
             <View style={styles.insideContainer}>
                 <Pressable style={({ pressed }) => [
