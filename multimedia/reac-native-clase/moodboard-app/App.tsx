@@ -4,10 +4,8 @@ import {MoodCard} from "./src/components/MoodCard";
 import {NoteCard} from "./src/components/NoteCard";
 export default function App() {
     return (
-        <View style={styles.container}>
+        <View style={{flex: 1}}>
 
-
-            {/* <Text>Prueba</Text> */}
             <MoodCard/>
             <NoteCard/>
 
@@ -16,12 +14,3 @@ export default function App() {
     );
 }
 
-
-
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-    },
-});

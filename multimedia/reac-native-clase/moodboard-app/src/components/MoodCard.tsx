@@ -1,29 +1,34 @@
 import React from 'react'
 import {Text, View, StyleSheet, Pressable} from "react-native";
 import {MaterialCommunityIcons} from "@expo/vector-icons";
+import { useMoods } from '../hooks/useMoods';
+import { globalStyles } from '../styles/globalStyles';
 
 export const MoodCard = () => {
+  const { nextMood, showMood, showDots, resetMood } = useMoods();
 
     return (
-        <View style={styles.container}>
+        <View style={globalStyles.moodContainer}>
             <View>
-                <Text style={styles.emoji}>😃</Text>
-                <Text style={{marginHorizontal: 60}}>■ · · · ·</Text>
+                <Text style={globalStyles.emoji}>{showMood()}</Text>
+                <Text style={globalStyles.dots}>{showDots()}</Text>
             </View>
 
 
-            <View style={styles.insideContainer}>
+            <View style={globalStyles.insideContainer}>
                 <Pressable style={({ pressed }) => [
-                    styles.button,
+                    globalStyles.moodButton,
                     pressed ? { opacity: 0.7 } : { opacity: 1 }
-                ]}>
+                ]}
+                onPress={nextMood}>
                     <MaterialCommunityIcons name={"arrow-right-bold-box"} size={65} color={"white"}/>
                 </Pressable>
 
                 <Pressable style={({ pressed }) => [
-                    styles.button,
+                    globalStyles.moodButton,
                     pressed ? {opacity: 0.7} : {opacity: 1}
-                ]}>
+                ]}
+                onPress={resetMood}>
                     <MaterialCommunityIcons name={"reload"} size={65} color={"white"}/>
                 </Pressable>
 
@@ -33,42 +38,5 @@ export const MoodCard = () => {
 }
 
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 0.22,
-        backgroundColor: '#caad78ff',
-        padding: 25,
-        elevation: 25,
-        flexDirection: "row",
-        paddingTop: 50,
-    },
 
-    insideContainer: {
-        flex: 1,
-        justifyContent: "space-between",
-    },
-
-    emoji: {
-        marginLeft: 20,
-        fontSize: 100,
-    },
-
-    button: {
-        flex: 1,
-        backgroundColor: '#af7947ff',
-        marginRight: 20,
-        marginBottom: 5,
-        marginTop: 10,
-        marginLeft: 70,
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 15,
-        elevation: 15,
-    },
-
-     dots: {
-        fontSize: 40,
-        color: "#333"
-     }
-})
 
