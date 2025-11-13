@@ -52,6 +52,8 @@ export const globalStyles = StyleSheet.create({
       backgroundColor: '#f7da9dff',
       padding:10,
       borderRadius: 5,
+      
+
     },
 
     noteNavigation: {

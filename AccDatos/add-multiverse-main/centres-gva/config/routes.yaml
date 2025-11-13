@@ -1,0 +1,30 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+app_centres:
+  path: /centres
+  controller: App\Controller\CentreController::centres
+
+app_centre:
+  path: /centre/{id}
+  controller: App\Controller\CentreController::centre
+
+
+
+app_cicles:
+  path: /cicles
+  controller: App\Controller\CicleController::cicles
+
+app_cicle:
+  path: /cicle/{id}
+  controller: App\Controller\CicleController::cicle
+
+
+
+app_provincias:
+  path: /provincias
+  controller: App\Controller\ProvinciaController::provincias
+
+app_provincia:
+  path: /provincia/{id}
+  controller: App\Controller\ProvinciaController::cprovincia
