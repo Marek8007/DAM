@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const useNotes = () => {
-
+d
   const [notes, setNotes] = useState([""]); //array de notas
   const [currentNote, setCurrentNote] = useState(0); // índice
 
@@ -9,16 +9,17 @@ const useNotes = () => {
 
   const saveNote = (text: string) => { //guardar text en la nota
     if (!text.trim()) return; //si está vacío nada
-    const newNotes = [...notes];
-    newNotes[currentNote] = text;
-    setNotes(newNotes);
+
+    notes[currentNote] = text
+    // const newNotes = [...notes];
+    // newNotes[currentNote] = text;
+    // setNotes(newNotes);
   };
 
 
   const addNote = () => { //crea una nueva nota
-    const newNotes = [...notes, ""];
-    setNotes(newNotes);
-    setCurrentNote(newNotes.length - 1); // nos movemos a la nueva
+    notes.push("")
+    setCurrentNote(notes.length - 1); // nos movemos a la nueva
   };
 
   const nextNote = () => { // cambiar de nota

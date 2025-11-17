@@ -74,6 +74,8 @@ export const NoteCard = () => {
           style={[{ flex: 0.3 }, globalStyles.noteButton]}
           onPress={() => {
             if (text.trim() !== "") saveNote(text);
+
+            
             if (currentNote === notes.length - 1) {
               addNote();
             } else {
