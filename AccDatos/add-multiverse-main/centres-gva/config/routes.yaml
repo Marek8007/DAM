@@ -9,6 +9,22 @@ app_centre:
   path: /centre/{id}
   controller: App\Controller\CentreController::centre
 
+app_centre_new:
+  path: /centre-new
+  controller: App\Controller\CentreController::newCentre
+
+app_centre_update:
+  path: /centre-update/{id}
+  controller: App\Controller\CentreController::updateCentre
+
+app_centre_delete:
+  path: /centre-delete/{id}
+  controller: App\Controller\CentreController::deleteCentre
+
+app_centre_cicle:
+  path: /centre-cicle/{centre_id}/{cicle_id}
+  controller: App\Controller\CentreController::addCicleCentre
+
 
 
 app_cicles:

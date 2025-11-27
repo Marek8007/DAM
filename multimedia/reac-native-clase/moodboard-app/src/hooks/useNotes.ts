@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const useNotes = () => {
-d
+
   const [notes, setNotes] = useState([""]); //array de notas
   const [currentNote, setCurrentNote] = useState(0); // índice
 
