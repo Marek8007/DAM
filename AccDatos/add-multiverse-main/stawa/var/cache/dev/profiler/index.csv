@@ -1,0 +1,14 @@
+03eaab,172.18.0.1,GET,http://localhost:8082/cicles,1765730512,161698,404
+161698,172.18.0.1,GET,http://localhost:8082/cicles,1765730512,,404
+8f55e2,172.18.0.1,GET,http://localhost:8082/,1765730516,,404
+f736f7,172.18.0.1,GET,http://localhost:8082/favicon.ico,1765730516,240492,404
+240492,172.18.0.1,GET,http://localhost:8082/favicon.ico,1765730516,,404
+f2d164,172.18.0.1,GET,http://localhost:8082/,1765732089,,404
+dc8537,172.18.0.1,GET,http://localhost:8082/characters,1765732099,,500
+a74939,172.18.0.1,GET,http://localhost:8082/characters,1765732099,,500
+0a833b,172.18.0.1,GET,http://localhost:8082/planets,1765732208,,500
+ec6804,172.18.0.1,GET,http://localhost:8082/planets,1765732208,,500
+3fc32b,172.18.0.1,GET,http://localhost:8082/deaths,1765732348,94825d,500
+94825d,172.18.0.1,GET,http://localhost:8082/deaths,1765732348,,500
+22962d,172.18.0.1,GET,http://localhost:8082/deaths,1765732408,87e3c7,500
+87e3c7,172.18.0.1,GET,http://localhost:8082/deaths,1765732408,,500
