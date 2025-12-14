@@ -20,7 +20,7 @@ class Centre
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      *
-     * @Groups({"centre"})
+     * @Groups({"centre", "cicle_centre"})
      */
     private $id;
 
@@ -28,7 +28,7 @@ class Centre
      * @var string
      *
      * @ORM\Column(name="codi", type="string", length=8, nullable=false)
-     * @Groups({"centre"})
+     * @Groups({"centre", "cicle_centre"})
      */
     private $codi = '';
 
@@ -36,7 +36,7 @@ class Centre
      * @var string|null
      *
      * @ORM\Column(name="centre", type="string", length=150, nullable=true)
-     * @Groups({"centre"})
+     * @Groups({"centre", "cicle_centre"})
      */
     private $centre;
 
@@ -44,7 +44,7 @@ class Centre
      * @var string|null
      *
      * @ORM\Column(name="direccio", type="string", length=200, nullable=true)
-     * @Groups({"centre"})
+     * @Groups({"centre", "cicle_centre"})
      */
     private $direccio;
 
@@ -52,7 +52,7 @@ class Centre
      * @var string|null
      *
      * @ORM\Column(name="localitat", type="string", length=150, nullable=true)
-     * @Groups({"centre"})
+     * @Groups({"centre", "cicle_centre"})
      */
     private $localitat;
 
@@ -60,7 +60,7 @@ class Centre
      * @var string|null
      *
      * @ORM\Column(name="telefon", type="string", length=12, nullable=true)
-     * @Groups({"centre"})
+     * @Groups({"centre", "cicle_centre"})
      */
     private $telefon;
 
@@ -68,7 +68,7 @@ class Centre
      * @var string|null
      *
      * @ORM\Column(name="query", type="string", length=255, nullable=true)
-     * @Groups({"centre"})
+     * @Groups({"centre", "cicle_centre"})
      */
     private $query;
 
@@ -79,7 +79,7 @@ class Centre
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="provincia_id", referencedColumnName="id")
      * })
-     * @Groups({"centre"})
+     * @Groups({"centre", "cicle_centre"})
      */
     private $provincia;
 
@@ -90,7 +90,7 @@ class Centre
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="regim_id", referencedColumnName="id")
      * })
-     * @Groups({"centre"})
+     * @Groups({"centre", "cicle_centre"})
      */
     private $regim;
 
@@ -209,6 +209,13 @@ class Centre
     public function setCicle($cicle): void
     {
         $this->cicle = $cicle;
+    }
+
+    public function addCicle(Cicle $cicle): void
+    {
+        if (!$this->cicle->contains($cicle)) {
+            $this->cicle[] = $cicle;
+        }
     }
 
 

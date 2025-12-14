@@ -14,6 +14,7 @@ return [
         '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
         '/centres' => [[['_route' => 'app_centres', '_controller' => 'App\\Controller\\CentreController::centres'], null, null, null, false, false, null]],
+        '/centre-new' => [[['_route' => 'app_centre_new', '_controller' => 'App\\Controller\\CentreController::newCentre'], null, null, null, false, false, null]],
         '/cicles' => [[['_route' => 'app_cicles', '_controller' => 'App\\Controller\\CicleController::cicles'], null, null, null, false, false, null]],
         '/provincias' => [[['_route' => 'app_provincias', '_controller' => 'App\\Controller\\ProvinciaController::provincias'], null, null, null, false, false, null]],
     ],
@@ -35,10 +36,17 @@ return [
                     .')'
                 .')'
                 .'|/c(?'
-                    .'|entre/([^/]++)(*:188)'
-                    .'|icle/([^/]++)(*:209)'
+                    .'|entre(?'
+                        .'|/([^/]++)(*:191)'
+                        .'|\\-(?'
+                            .'|update/([^/]++)(*:219)'
+                            .'|delete/([^/]++)(*:242)'
+                            .'|cicle/([^/]++)/([^/]++)(*:273)'
+                        .')'
+                    .')'
+                    .'|icle/([^/]++)(*:296)'
                 .')'
-                .'|/provincia/([^/]++)(*:237)'
+                .'|/provincia/([^/]++)(*:324)'
             .')/?$}sD',
     ],
     [ // $dynamicRoutes
@@ -49,9 +57,12 @@ return [
         136 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception_panel::body'], ['token'], null, null, false, false, null]],
         149 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
         159 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
-        188 => [[['_route' => 'app_centre', '_controller' => 'App\\Controller\\CentreController::centre'], ['id'], null, null, false, true, null]],
-        209 => [[['_route' => 'app_cicle', '_controller' => 'App\\Controller\\CicleController::cicle'], ['id'], null, null, false, true, null]],
-        237 => [
+        191 => [[['_route' => 'app_centre', '_controller' => 'App\\Controller\\CentreController::centre'], ['id'], null, null, false, true, null]],
+        219 => [[['_route' => 'app_centre_update', '_controller' => 'App\\Controller\\CentreController::updateCentre'], ['id'], null, null, false, true, null]],
+        242 => [[['_route' => 'app_centre_delete', '_controller' => 'App\\Controller\\CentreController::deleteCentre'], ['id'], null, null, false, true, null]],
+        273 => [[['_route' => 'app_centre_cicle', '_controller' => 'App\\Controller\\CentreController::addCicleCentre'], ['centre_id', 'cicle_id'], null, null, false, true, null]],
+        296 => [[['_route' => 'app_cicle', '_controller' => 'App\\Controller\\CicleController::cicle'], ['id'], null, null, false, true, null]],
+        324 => [
             [['_route' => 'app_provincia', '_controller' => 'App\\Controller\\ProvinciaController::cprovincia'], ['id'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],

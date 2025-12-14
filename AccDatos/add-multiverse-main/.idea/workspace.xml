@@ -5,14 +5,170 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8e59202-82c9-4b10-8259-a660da18f54b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../proyector/mapaPruebas/src/mapa/MapC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../proyector/mapaPruebas/src/mapa/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../proyector/mapaPruebas/src/mapa/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../proyector/mapaPruebas/src/mapa/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../proyector/mapaPruebas/src/mapa/Map.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examenadd/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../servicis/src/DescargaArchivo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../servicis/src/HiloEjemplo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../servicis/src/ud1/Lanzador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../servicis/src/ud1/Programa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../servicis/src/ud1/killNote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../servicis/src/ud1/lanzaSuma.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../servicis/src/ud1/mayus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../servicis/src/ud1/mayusLanzar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../servicis/src/ud1/pngs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../servicis/src/ud1/suma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/src/Controller/CentreController.php" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/src/Controller/CentreController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/src/Controller/CicleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/src/Controller/CicleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/src/Entity/Centre.php" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/src/Entity/Centre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/src/Entity/Cicle.php" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/src/Entity/Cicle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/src/Entity/Regim.php" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/src/Entity/Regim.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/ContainerPRnYExh/removed-ids.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/ContainerPRnYExh/srcApp_KernelDevDebugContainer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/ContainerXXCcgp8.legacy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/ContainerXXCcgp8/removed-ids.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/ContainerXXCcgp8/srcApp_KernelDevDebugContainer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/UrlGenerator.php" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/UrlGenerator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/UrlMatcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/UrlMatcher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/-/H/dLdNmxQAvTZNsWR4LFvg" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/-/H/dLdNmxQAvTZNsWR4LFvg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/0/0/pb0VK8Tw5Zc7hXwq4VgA" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/0/0/pb0VK8Tw5Zc7hXwq4VgA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/1/A/mhkOvzaa9ydh-M4frcDA" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/1/A/mhkOvzaa9ydh-M4frcDA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/2/3/E9rPnTubBD+u64JCB7Ow" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/2/3/E9rPnTubBD+u64JCB7Ow" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/2/I/+gDYdaOxCjLtgAT4Bylw" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/2/I/+gDYdaOxCjLtgAT4Bylw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/2/L/wl0i8S-9EGwnyaFNRJ9Q" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/2/L/wl0i8S-9EGwnyaFNRJ9Q" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/3/B/GbwiMrt2BG57wq-+OCVw" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/3/B/GbwiMrt2BG57wq-+OCVw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/4/1/ol2tJ286ssuIdpRcdxgA" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/4/1/ol2tJ286ssuIdpRcdxgA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/4/B/h8W8aO6ELLQFS5g9BVdw" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/4/B/h8W8aO6ELLQFS5g9BVdw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/4/W/JhfXnqg1cR+pkjwNLGPQ" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/4/W/JhfXnqg1cR+pkjwNLGPQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/5/6/VMNFVmydk2sWhKMJg5Sw" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/5/6/VMNFVmydk2sWhKMJg5Sw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/5/E/0x74rX4xUtip8gC1G8cQ" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/5/E/0x74rX4xUtip8gC1G8cQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/6/-/LAdLtVE9X4kDJcVZNc4A" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/6/-/LAdLtVE9X4kDJcVZNc4A" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/7/1/PjSfSYAa8zD4SUmQZ6Vg" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/7/1/PjSfSYAa8zD4SUmQZ6Vg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/7/3/VtngFwmLxxV7CYaA0XLg" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/7/3/VtngFwmLxxV7CYaA0XLg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/7/C/r0e9EPq3ijYLp+FNqN6w" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/7/C/r0e9EPq3ijYLp+FNqN6w" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/7/V/3fbUTP2E68ELgMfHJdhA" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/7/V/3fbUTP2E68ELgMfHJdhA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/9/0/RXwKP27M-rGcazO7vvRg" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/9/0/RXwKP27M-rGcazO7vvRg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/9/I/h3TnY+1C6JlYb71VyqXQ" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/9/I/h3TnY+1C6JlYb71VyqXQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/B/H/zG263ot0cEBYRP9z5V4w" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/B/H/zG263ot0cEBYRP9z5V4w" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/B/N/k63t-PGvK6A-DKM-q0ng" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/B/N/k63t-PGvK6A-DKM-q0ng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/B/Q/PzXkciYiuaLg12HZvCLA" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/B/Q/PzXkciYiuaLg12HZvCLA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/C/B/ybZzl1vlzkyQsn6wP-LA" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/C/B/ybZzl1vlzkyQsn6wP-LA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/C/J/OT02QDzFtH9GGXOdV53w" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/C/J/OT02QDzFtH9GGXOdV53w" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/C/V/6LpiHHB86rWZptulLE5g" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/C/V/6LpiHHB86rWZptulLE5g" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/C/W/wvn9zNLN5xAJ9dAQZZMg" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/C/W/wvn9zNLN5xAJ9dAQZZMg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/D/+/nBdFzyM90BGCe4ocPAQQ" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/D/+/nBdFzyM90BGCe4ocPAQQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/D/1/WcpsgN6+xPa95YyH8eRg" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/D/1/WcpsgN6+xPa95YyH8eRg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/D/3/nVzip+ce5K7PnQ4ToKyQ" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/D/3/nVzip+ce5K7PnQ4ToKyQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/D/9/EJu9ESKh+uKQFi629wUQ" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/D/9/EJu9ESKh+uKQFi629wUQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/D/D/wEI3jZXcZQfyyaJtwyZA" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/D/D/wEI3jZXcZQfyyaJtwyZA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/D/Z/Nt9jonZJr-uQaK2t6slg" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/D/Z/Nt9jonZJr-uQaK2t6slg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/E/4/4c3AzLAHm2LM49rwK1IA" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/E/4/4c3AzLAHm2LM49rwK1IA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/F/L/hr97nbU-Dcd1oknoOSXQ" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/F/L/hr97nbU-Dcd1oknoOSXQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/F/O/B9ZqakWbHxZPKoG6FVFg" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/F/O/B9ZqakWbHxZPKoG6FVFg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/F/O/sI-XJEMjdAyTMJW06xWg" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/F/O/sI-XJEMjdAyTMJW06xWg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/F/S/vvqOcIZtZKBzGTn5mlbA" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/F/S/vvqOcIZtZKBzGTn5mlbA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/G/1/orTpE+FNAVunqHiPyn4A" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/G/1/orTpE+FNAVunqHiPyn4A" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/G/3/PfJ1Mwdneuk-WyAN96mA" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/G/3/PfJ1Mwdneuk-WyAN96mA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/G/Q/+znbpWtUWUtdZH7VafCg" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/G/Q/+znbpWtUWUtdZH7VafCg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/H/2/HtXtQWTm2bqkeWFU5D3g" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/H/2/HtXtQWTm2bqkeWFU5D3g" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/H/G/GMwmCEKZUf53bACEgiOw" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/H/G/GMwmCEKZUf53bACEgiOw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/H/L/66iAw1WniYJ6Vjo71c4w" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/H/L/66iAw1WniYJ6Vjo71c4w" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/H/L/8dHMuf44xQrMMMp4regw" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/H/L/8dHMuf44xQrMMMp4regw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/H/R/1KJDYsraSdVKyAToG29g" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/H/R/1KJDYsraSdVKyAToG29g" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/H/V/viBRqZJTunNVAH4MP0Bw" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/H/V/viBRqZJTunNVAH4MP0Bw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/H/W/94D6o493Hi2V6UIJdqVA" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/H/W/94D6o493Hi2V6UIJdqVA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/I/1/cs56YLVXF-Ma6FWU1TTQ" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/I/1/cs56YLVXF-Ma6FWU1TTQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/I/D/Roj-veqGEpyl-WXkenwg" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/I/D/Roj-veqGEpyl-WXkenwg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/I/W/yzH-QUPOnjUDOFDrWZKg" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/I/W/yzH-QUPOnjUDOFDrWZKg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/J/1/N0gJMNqdd6ctwgMao8FA" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/J/1/N0gJMNqdd6ctwgMao8FA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/J/D/+qpZAuB4LfQ7xBTjCsmw" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/J/D/+qpZAuB4LfQ7xBTjCsmw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/J/E/Qvg4gNI2A5stpS+FIegQ" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/J/E/Qvg4gNI2A5stpS+FIegQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/J/J/zK6ztCmR9iIyqMZ8felw" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/J/J/zK6ztCmR9iIyqMZ8felw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/J/P/B4oOkR-R49-ub2Xop+mA" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/J/P/B4oOkR-R49-ub2Xop+mA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/K/1/5V4Tl9e3ElkyU7xQtb1w" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/K/1/5V4Tl9e3ElkyU7xQtb1w" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/K/B/U-aAoiAxu0PqSdOy84IA" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/K/B/U-aAoiAxu0PqSdOy84IA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/K/E/qrmFikmAmQ1UbpWdF-hw" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/K/E/qrmFikmAmQ1UbpWdF-hw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/K/L/PW8nBWt6JVQY4bhtfmPQ" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/K/L/PW8nBWt6JVQY4bhtfmPQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/K/M/aua1PLZOxH1dA0wFYbxg" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/K/M/aua1PLZOxH1dA0wFYbxg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/K/Q/h2hSebDe579QYiSDqDqQ" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/K/Q/h2hSebDe579QYiSDqDqQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/K/W/OxKvVd5ypcgzDTwmzK+g" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/K/W/OxKvVd5ypcgzDTwmzK+g" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/K/Z/krs2zV3oSoiGYiJcnptA" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/K/Z/krs2zV3oSoiGYiJcnptA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/L/6/NkTJHHJIV+80oGWa20-w" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/L/6/NkTJHHJIV+80oGWa20-w" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/L/D/HB1Dtt75MJNlrPpkohQg" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/L/D/HB1Dtt75MJNlrPpkohQg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/L/N/AF4pZMPPUMb3djSogOBw" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/L/N/AF4pZMPPUMb3djSogOBw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/M/2/5FqdxkAe-V7e3Iuh6Bag" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/M/2/5FqdxkAe-V7e3Iuh6Bag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/M/7/8ahYdA5KHgqrawq419TA" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/M/7/8ahYdA5KHgqrawq419TA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/M/C/Io1xfiLb3+qZLHJYm4pQ" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/M/C/Io1xfiLb3+qZLHJYm4pQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/M/K/Psjd5VIM9XnSkjvXD2Cg" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/M/K/Psjd5VIM9XnSkjvXD2Cg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/M/O/6BpV9SW6bQwJnwLVR5xQ" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/M/O/6BpV9SW6bQwJnwLVR5xQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/N/F/8FPOXfWsZXjjcr48eqYw" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/N/F/8FPOXfWsZXjjcr48eqYw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/N/H/UQHvVuOq86-ZhBq8hRIA" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/N/H/UQHvVuOq86-ZhBq8hRIA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/N/N/KR8fmzVZP1Wh+Mi-eLAg" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/N/N/KR8fmzVZP1Wh+Mi-eLAg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/N/O/ih-yi70+nwz4g124MFmA" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/N/O/ih-yi70+nwz4g124MFmA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/N/Q/fcoB+O93d4EtnX7nigYQ" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/N/Q/fcoB+O93d4EtnX7nigYQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/O/E/GdwjVweZQgaCd336Ffhg" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/O/E/GdwjVweZQgaCd336Ffhg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/O/J/czZJjv4IS-5VwKoRVAVQ" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/O/J/czZJjv4IS-5VwKoRVAVQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/O/P/SzCh4Idn8zXwRMCDCI0Q" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/O/P/SzCh4Idn8zXwRMCDCI0Q" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/P/E/PSRv55n2j9dUKJLb34LA" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/P/E/PSRv55n2j9dUKJLb34LA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/P/E/Z9KSeRQdMAC0pwoyvgCw" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/P/E/Z9KSeRQdMAC0pwoyvgCw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/P/K/5S1MRlUa0NYI4X4KdJeA" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/P/K/5S1MRlUa0NYI4X4KdJeA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/P/O/8T4zQwfbxWBIuvzgJMpw" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/P/O/8T4zQwfbxWBIuvzgJMpw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/Q/J/GC5QXtmnuCPQoCMGyPRg" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/Q/J/GC5QXtmnuCPQoCMGyPRg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/Q/L/lrrPRqKdqWvx8pHKHUWw" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/Q/L/lrrPRqKdqWvx8pHKHUWw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/Q/M/D05jk1Q4FCSvwbAiTkaw" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/Q/M/D05jk1Q4FCSvwbAiTkaw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/Q/V/ycknE6nnvmzF4L6+7ShQ" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/Q/V/ycknE6nnvmzF4L6+7ShQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/Q/W/hrKKjmUQyq4t8gRgDnBw" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/Q/W/hrKKjmUQyq4t8gRgDnBw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/R/0/FijzMe0D3qAnmf2Pa8JA" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/R/0/FijzMe0D3qAnmf2Pa8JA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/R/E/ZzBW5Xj3hITDLW5j2gaQ" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/R/E/ZzBW5Xj3hITDLW5j2gaQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/S/9/NLJYF7OIKz2gtOnno2vg" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/S/9/NLJYF7OIKz2gtOnno2vg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/S/N/HySfDLaiY62aIuVsGdvA" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/S/N/HySfDLaiY62aIuVsGdvA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/S/R/SvUzxeBlkd0Iqd--kj3A" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/S/R/SvUzxeBlkd0Iqd--kj3A" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/S/X/WCS6OfKBIR4j3ocNytcg" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/S/X/WCS6OfKBIR4j3ocNytcg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/T/S/rkkatFCYOQoxW9dgdGFQ" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/T/S/rkkatFCYOQoxW9dgdGFQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/U/H/eFAZ7hdAhPKsU5kPLaVg" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/U/H/eFAZ7hdAhPKsU5kPLaVg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/U/V/xYf9LHshXBh0Y8KatggA" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/U/V/xYf9LHshXBh0Y8KatggA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/U/W/vXiki0R7JXfRcv6NZdYg" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/U/W/vXiki0R7JXfRcv6NZdYg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/V/A/xprGzow4AFZ51d8kN4Uw" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/V/A/xprGzow4AFZ51d8kN4Uw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/V/G/dZsIZFak6lfk3S1vOrPg" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/V/G/dZsIZFak6lfk3S1vOrPg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/V/P/oDiFLxXGHf70bn2GWAYQ" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/V/P/oDiFLxXGHf70bn2GWAYQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/V/V/-O7mhjDx2EKnhSNFsRhA" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/V/V/-O7mhjDx2EKnhSNFsRhA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/W/A/DzgAKGFvLqIUDZ2BG3jA" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/W/A/DzgAKGFvLqIUDZ2BG3jA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/W/G/GGpKIQwZt-yelUs7Cd8Q" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/W/G/GGpKIQwZt-yelUs7Cd8Q" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/W/U/Md-8EwAyHhf0BF7en2TA" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/W/U/Md-8EwAyHhf0BF7en2TA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/X/F/MW9pPqEDG6IcdQ4dGSnA" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/X/F/MW9pPqEDG6IcdQ4dGSnA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/X/T/IGzRd7h-skBKI2aZgOwQ" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/X/T/IGzRd7h-skBKI2aZgOwQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/X/X/GExf1Ou-o8PNGSEaU0aQ" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/X/X/GExf1Ou-o8PNGSEaU0aQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/Y/0/LeQjX7sQ8y1lwvdExV0w" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/Y/0/LeQjX7sQ8y1lwvdExV0w" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/Y/J/kd4on7S2Ee2u9K+75H4w" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/Y/J/kd4on7S2Ee2u9K+75H4w" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/Z/G/QtgZlOvDe7SOR-MnubKQ" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/pools/+rS3hc-sPQ/Z/G/QtgZlOvDe7SOR-MnubKQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/profiler/index.csv" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/profiler/index.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/srcApp_KernelDevDebugContainer.php" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/srcApp_KernelDevDebugContainer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/srcApp_KernelDevDebugContainer.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/srcApp_KernelDevDebugContainer.php.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/srcApp_KernelDevDebugContainer.preload.php" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/srcApp_KernelDevDebugContainer.preload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/srcApp_KernelDevDebugContainer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/srcApp_KernelDevDebugContainer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/cache/dev/srcApp_KernelDevDebugContainer.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/cache/dev/srcApp_KernelDevDebugContainer.xml.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centres-gva/var/log/dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/centres-gva/var/log/dev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql-rds/project_files(1)/constants.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql-rds/project_files(1)/database.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql-rds/project_files(1)/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SGE/gestiona_una_empresa.odt" beforeDir="false" afterPath="$PROJECT_DIR$/../../SGE/gestiona_una_empresa.odt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../juego_aventura_intermodular" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../multimedia/reac-native-clase/moodboard-app/src/hooks/useNotes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../multimedia/reac-native-clase/moodboard-app/src/hooks/useNotes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../multimedia/reac-native-clase/my-expo-app" beforeDir="false" afterPath="$PROJECT_DIR$/../../multimedia/reac-native-clase/my-expo-app" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../proyector/juego_aventura_intermodular" beforeDir="false" afterPath="$PROJECT_DIR$/../../proyector/juego_aventura_intermodular" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -25,21 +181,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/marmiqlis/DAM/AccDatos/add-multiverse-main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/marmiqlis/DAM/AccDatos/add-multiverse-main/examenadd",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.import",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mysql-rds/examenadd" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -57,10 +220,16 @@
       <updated>1761043607091</updated>
       <workItem from="1761043608196" duration="2438000" />
       <workItem from="1761813553504" duration="21000" />
+      <workItem from="1764070500883" duration="555000" />
+      <workItem from="1764071058971" duration="1643000" />
+      <workItem from="1764230721979" duration="72000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/add_multiverse_main$main.coverage" NAME="main Coverage Results" MODIFIED="1764072165675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examenadd" />
   </component>
 </project>

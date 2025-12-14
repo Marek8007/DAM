@@ -4,6 +4,7 @@ namespace App\Entity;
 
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * Cicle
@@ -19,6 +20,8 @@ class Cicle
      * @ORM\Column(name="id", type="integer", nullable=false, options={"unsigned"=true})
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
+     *
+     * @Groups({"cicle", "cicle_centre"})
      */
     private $id;
 
@@ -26,6 +29,8 @@ class Cicle
      * @var string|null
      *
      * @ORM\Column(name="codi", type="string", length=5, nullable=true)
+     *
+     * @Groups({"cicle", "cicle_centre"})
      */
     private $codi;
 
@@ -33,6 +38,8 @@ class Cicle
      * @var string|null
      *
      * @ORM\Column(name="nom", type="string", length=100, nullable=true)
+     *
+     * @Groups({"cicle"})
      */
     private $nom;
 
